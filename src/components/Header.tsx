@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Menu, X, Phone, Zap, ArrowRight } from "lucide-react";
+import { Menu, X, Phone, ArrowRight } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { business, phoneDisplay, phoneHref } from "@/config/business";
+import logo from "@/assets/logo.jpeg";
 
 const navLinks = [
   { name: "Services", href: "/services" },
@@ -23,16 +24,8 @@ const Header = () => {
       <div className="container-x h-[74px] flex items-center justify-between gap-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 shrink-0" aria-label={`${business.name} home`}>
-          <span className="grid place-items-center w-[42px] h-[42px] rounded-xl bg-gradient-to-b from-blue-top to-blue shadow-[0_6px_16px_-6px_hsl(var(--blue)/0.75),inset_0_1px_0_hsl(0_0%_100%/0.28)]">
-            <Zap className="h-5 w-5 text-white fill-white" />
-          </span>
-          <span className="flex flex-col leading-none">
-            <span className="font-body font-semibold text-[10.5px] tracking-[0.22em] uppercase text-blue-accent">
-              {business.county}
-            </span>
-            <span className="font-headline font-bold text-[19px] text-white mt-[3px]">
-              Generac<span className="text-blue-accent"> Service</span>
-            </span>
+          <span className="grid place-items-center bg-white rounded-xl p-1.5 shadow-[0_4px_12px_-4px_rgba(0,0,0,0.4)]">
+            <img src={logo} alt={`${business.name} logo`} className="h-9 md:h-11 w-auto" width={1024} height={730} />
           </span>
         </Link>
 
