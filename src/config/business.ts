@@ -20,7 +20,7 @@ export const business = {
   // Contact — PLACEHOLDERS
   phone: "",                                  // TODO e.g. "(732) 555-0100"
   phoneHref: "",                              // TODO e.g. "tel:7325550100"
-  email: "",                                  // TODO e.g. "info@monmouthcountygenerac.com"
+  email: "info@monmouthcountygenerac.com",
 
   // Address — PLACEHOLDER (LocalBusiness schema needs a real service-area address)
   address: {

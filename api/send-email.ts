@@ -25,8 +25,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       },
     });
 
-    // TODO: set the real inbox address before launch (where leads are emailed).
-    const inboxAddress = process.env.LEAD_INBOX || 'leads@monmouthcountygenerac.com';
+    const inboxAddress = 'info@monmouthcountygenerac.com';
     const SITE_TAG = '[Monmouth Generac]';
     const SITE_NAME = 'monmouthcountygenerac.com';
 
