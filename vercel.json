@@ -1,0 +1,28 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        { "type": "host", "value": "www.monmouthcountygenerac.com" }
+      ],
+      "destination": "https://monmouthcountygenerac.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/get-estimate",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
