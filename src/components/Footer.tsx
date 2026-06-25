@@ -1,78 +1,105 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Zap, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import { business, phoneDisplay, phoneHref } from "@/config/business";
 
-const Footer = () => {
-  const services = [
-    { name: "Generator Installation", slug: "generator-installation" },
-    { name: "Standby Generators", slug: "standby-generators" },
-    { name: "Generator Maintenance", slug: "generator-maintenance" },
-    { name: "Generator Repair", slug: "generator-repair" },
-  ];
+const services = [
+  { name: "Generator Installation", slug: "generator-installation" },
+  { name: "Standby Generators", slug: "standby-generators" },
+  { name: "Generator Maintenance", slug: "generator-maintenance" },
+  { name: "Generator Repair", slug: "generator-repair" },
+  { name: "Electrical Services", slug: "electrical-services" },
+];
 
-  const serviceAreas = [
-    { name: "Middletown", slug: "middletown" },
-    { name: "Holmdel", slug: "holmdel" },
-    { name: "Colts Neck", slug: "colts-neck" },
-    { name: "Rumson", slug: "rumson" },
-    { name: "Marlboro", slug: "marlboro" },
-    { name: "Freehold", slug: "freehold" },
-  ];
+const serviceAreas = [
+  { name: "Middletown", slug: "middletown" },
+  { name: "Holmdel", slug: "holmdel" },
+  { name: "Colts Neck", slug: "colts-neck" },
+  { name: "Rumson", slug: "rumson" },
+  { name: "Marlboro", slug: "marlboro" },
+  { name: "Freehold", slug: "freehold" },
+];
+
+const company = [
+  { name: "About", href: "/about" },
+  { name: "FAQ", href: "/faq" },
+  { name: "Get Estimate", href: "/get-estimate" },
+  { name: "Privacy", href: "/privacy" },
+  { name: "Terms", href: "/terms" },
+];
+
+const linkClass =
+  "font-body text-[14.5px] text-[#9fb0c7] hover:text-white transition-colors";
+const headingClass =
+  "font-body font-semibold text-xs uppercase tracking-[0.14em] text-[#6f829c] mb-[18px]";
+
+const Footer = () => {
+  const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-foreground text-background heavy-border-t" role="contentinfo">
-      <div className="w-full px-6 md:px-10 py-16">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10 max-w-7xl mx-auto">
-          {/* Brand */}
-          <div>
-            <div className="font-headline font-black italic tracking-tighter text-xl uppercase mb-6">
-              {business.name}
-            </div>
-            <p className="text-sm opacity-80 leading-relaxed mb-6">
-              {business.description}
+    <footer className="bg-slate-footer text-[#9fb0c7]" role="contentinfo">
+      <div className="container-x pt-14 md:pt-[72px] pb-0">
+        <div className="grid gap-10 md:gap-11 grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+          {/* Brand column */}
+          <div className="max-w-[340px]">
+            <Link to="/" className="flex items-center gap-3" aria-label={`${business.name} home`}>
+              <span className="grid place-items-center w-[42px] h-[42px] rounded-xl bg-gradient-to-b from-blue-top to-blue shadow-[0_6px_16px_-6px_hsl(var(--blue)/0.7),inset_0_1px_0_hsl(0_0%_100%/0.28)]">
+                <Zap className="h-5 w-5 text-white fill-white" />
+              </span>
+              <span className="flex flex-col leading-none">
+                <span className="font-body font-semibold text-[10.5px] tracking-[0.22em] uppercase text-blue-accent">
+                  {business.county}
+                </span>
+                <span className="font-headline font-bold text-[19px] text-white mt-[3px]">
+                  Generac<span className="text-blue-accent"> Service</span>
+                </span>
+              </span>
+            </Link>
+
+            <p className="font-body text-sm leading-relaxed text-[#8295ad] mt-[18px]">
+              Independent standby-generator specialists serving {business.county},
+              NJ — maintenance, installation, and emergency repair.
             </p>
-            <div className="space-y-3 text-sm opacity-90">
+
+            <div className="inline-flex items-center gap-2 mt-[18px] rounded-full px-3.5 py-2 bg-blue-accent/10 border border-blue-accent/20">
+              <ShieldCheck className="h-[15px] w-[15px] text-blue-accent" />
+              <span className="font-body font-semibold text-[12.5px] text-[#cdd8ea]">
+                Licensed &amp; Insured in NJ
+              </span>
+            </div>
+
+            <div className="flex flex-col gap-2.5 mt-[22px]">
               {business.phone && (
-                <a href={phoneHref} className="flex items-center gap-3 hover:opacity-100 transition-opacity">
-                  <Phone className="h-4 w-4 flex-shrink-0" />
-                  <span className="font-headline font-bold tracking-wider">{phoneDisplay}</span>
+                <a
+                  href={phoneHref}
+                  className="flex items-center gap-2.5 font-body font-semibold text-[15px] text-white hover:text-blue-accent transition-colors"
+                >
+                  <Phone className="h-[17px] w-[17px] text-blue-accent shrink-0" />
+                  {phoneDisplay}
                 </a>
               )}
               {business.email && (
                 <a
                   href={`mailto:${business.email}`}
-                  className="flex items-center gap-3 hover:opacity-100 transition-opacity"
+                  className="flex items-center gap-2.5 font-body text-sm text-[#9fb0c7] hover:text-white transition-colors"
                 >
-                  <Mail className="h-4 w-4 flex-shrink-0" />
-                  <span className="text-xs">{business.email}</span>
+                  <Mail className="h-[17px] w-[17px] text-blue-accent shrink-0" />
+                  {business.email}
                 </a>
               )}
-              <div className="flex items-center gap-3">
-                <MapPin className="h-4 w-4 flex-shrink-0" />
-                <span>{business.county}, {business.address.addressRegion}</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <Clock className="h-4 w-4 flex-shrink-0 mt-0.5" />
-                <div>
-                  <p>Mon–Fri 8AM–5PM</p>
-                  <p className="opacity-75 text-xs">Sat 9AM–2PM</p>
-                </div>
+              <div className="flex items-center gap-2.5 font-body text-sm text-[#9fb0c7]">
+                <MapPin className="h-[17px] w-[17px] text-blue-accent shrink-0" />
+                {business.county}, {business.address.addressRegion}
               </div>
             </div>
           </div>
 
           {/* Services */}
-          <div>
-            <h4 className="font-headline font-black uppercase tracking-wider text-sm mb-5 pb-3 border-b-2 border-background/20">
-              Services
-            </h4>
-            <ul className="space-y-2">
+          <nav aria-label="Services">
+            <div className={headingClass}>Services</div>
+            <ul className="flex flex-col gap-[11px]">
               {services.map((s) => (
                 <li key={s.slug}>
-                  <Link
-                    to={`/services/${s.slug}`}
-                    className="text-sm opacity-80 hover:opacity-100 hover:underline underline-offset-4 decoration-2 transition-opacity"
-                  >
+                  <Link to={`/services/${s.slug}`} className={linkClass}>
                     {s.name}
                   </Link>
                 </li>
@@ -80,97 +107,62 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services"
-                  className="text-sm font-headline font-bold uppercase tracking-wider hover:underline underline-offset-4 decoration-2"
+                  className="font-body font-semibold text-[14.5px] text-blue-accent hover:text-white transition-colors"
                 >
-                  All Services →
+                  All Services
                 </Link>
               </li>
             </ul>
-          </div>
+          </nav>
 
           {/* Service areas */}
-          <div>
-            <h4 className="font-headline font-black uppercase tracking-wider text-sm mb-5 pb-3 border-b-2 border-background/20">
-              Service Areas
-            </h4>
-            <ul className="space-y-2">
+          <nav aria-label="Service areas">
+            <div className={headingClass}>Service Areas</div>
+            <ul className="flex flex-col gap-[11px]">
               {serviceAreas.map((a) => (
                 <li key={a.slug}>
-                  <Link
-                    to={`/service-areas/${a.slug}`}
-                    className="text-sm opacity-80 hover:opacity-100 hover:underline underline-offset-4 decoration-2 transition-opacity"
-                  >
-                    {a.name}, {business.address.addressRegion}
+                  <Link to={`/service-areas/${a.slug}`} className={linkClass}>
+                    {a.name}
                   </Link>
                 </li>
               ))}
               <li>
                 <Link
                   to="/service-areas"
-                  className="text-sm font-headline font-bold uppercase tracking-wider hover:underline underline-offset-4 decoration-2"
+                  className="font-body font-semibold text-[14.5px] text-blue-accent hover:text-white transition-colors"
                 >
-                  All Areas →
+                  All Areas
                 </Link>
               </li>
             </ul>
-          </div>
+          </nav>
 
           {/* Company */}
-          <div>
-            <h4 className="font-headline font-black uppercase tracking-wider text-sm mb-5 pb-3 border-b-2 border-background/20">
-              Company
-            </h4>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/about" className="text-sm opacity-80 hover:opacity-100 hover:underline underline-offset-4 decoration-2 transition-opacity">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/faq" className="text-sm opacity-80 hover:opacity-100 hover:underline underline-offset-4 decoration-2 transition-opacity">
-                  FAQ
-                </Link>
-              </li>
-              <li>
-                <Link to="/get-estimate" className="text-sm opacity-80 hover:opacity-100 hover:underline underline-offset-4 decoration-2 transition-opacity">
-                  Get Estimate
-                </Link>
-              </li>
-              <li>
-                <Link to="/privacy" className="text-sm opacity-80 hover:opacity-100 hover:underline underline-offset-4 decoration-2 transition-opacity">
-                  Privacy
-                </Link>
-              </li>
-              <li>
-                <Link to="/terms" className="text-sm opacity-80 hover:opacity-100 hover:underline underline-offset-4 decoration-2 transition-opacity">
-                  Terms
-                </Link>
-              </li>
+          <nav aria-label="Company">
+            <div className={headingClass}>Company</div>
+            <ul className="flex flex-col gap-[11px]">
+              {company.map((c) => (
+                <li key={c.href}>
+                  <Link to={c.href} className={linkClass}>
+                    {c.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
-          </div>
+          </nav>
         </div>
-      </div>
 
-      {/* Bottom bar */}
-      <div className="border-t-2 border-background/20">
-        <div className="w-full px-6 md:px-10 py-6 max-w-7xl mx-auto flex flex-col gap-3">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="font-headline font-bold uppercase tracking-wider text-xs opacity-70">
-              © {new Date().getFullYear()} {business.name}.
-            </div>
-            <div className="flex flex-wrap justify-center gap-6 text-xs">
-              <Link to="/privacy" className="font-headline font-bold uppercase tracking-wider opacity-70 hover:opacity-100 hover:underline underline-offset-4">
-                Privacy
-              </Link>
-              <Link to="/terms" className="font-headline font-bold uppercase tracking-wider opacity-70 hover:opacity-100 hover:underline underline-offset-4">
-                Terms
-              </Link>
-              <Link to="/sitemap" className="font-headline font-bold uppercase tracking-wider opacity-70 hover:opacity-100 hover:underline underline-offset-4">
-                Sitemap
-              </Link>
-            </div>
-          </div>
-          <p className="text-[11px] opacity-50 leading-relaxed">
+        {/* Bottom bar */}
+        <div className="mt-9 md:mt-14 border-t border-white/10 py-[22px] flex flex-wrap gap-x-5 gap-y-2.5 justify-between items-center">
+          <span className="font-body text-[13px] text-[#6f829c]">
+            © {year} {business.name}. All rights reserved.
+          </span>
+          <span className="font-body text-[13px] text-[#6f829c]">
+            Maintenance · Installation · Repair · {business.county}, NJ
+          </span>
+        </div>
+        <div className="pb-7">
+          <p className="font-body text-xs leading-[1.55] text-[#5c6e88] max-w-[840px]">
             {business.disclaimer}
           </p>
         </div>

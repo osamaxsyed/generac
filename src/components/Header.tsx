@@ -1,109 +1,122 @@
 import { useState } from "react";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Zap, ArrowRight } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { business, phoneDisplay, phoneHref } from "@/config/business";
+
+const navLinks = [
+  { name: "Services", href: "/services" },
+  { name: "Service Areas", href: "/service-areas" },
+  { name: "Cost Guide", href: "/whole-house-generator-cost" },
+  { name: "About", href: "/about" },
+  { name: "FAQ", href: "/faq" },
+];
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
 
-  const navLinks = [
-    { name: "Services", href: "/services" },
-    { name: "Service Areas", href: "/service-areas" },
-    { name: "Cost Guide", href: "/whole-house-generator-cost" },
-    { name: "About", href: "/about" },
-    { name: "FAQ", href: "/faq" },
-  ];
-
   return (
-    <header className="sticky top-0 z-50 bg-background heavy-border-b" role="banner">
-      <div className="w-full px-6 md:px-10 py-5 flex justify-between items-center">
-        {/* Logo wordmark */}
-        <Link
-          to="/"
-          className="font-headline font-black italic tracking-tighter text-xl md:text-2xl uppercase text-foreground"
-        >
-          {business.name}
+    <header
+      className="sticky top-0 z-[60] bg-slate-header/95 backdrop-blur-md border-b border-white/10"
+      role="banner"
+    >
+      <div className="container-x h-[74px] flex items-center justify-between gap-4">
+        {/* Logo */}
+        <Link to="/" className="flex items-center gap-3 shrink-0" aria-label={`${business.name} home`}>
+          <span className="grid place-items-center w-[42px] h-[42px] rounded-xl bg-gradient-to-b from-blue-top to-blue shadow-[0_6px_16px_-6px_hsl(var(--blue)/0.75),inset_0_1px_0_hsl(0_0%_100%/0.28)]">
+            <Zap className="h-5 w-5 text-white fill-white" />
+          </span>
+          <span className="flex flex-col leading-none">
+            <span className="font-body font-semibold text-[10.5px] tracking-[0.22em] uppercase text-blue-accent">
+              {business.county}
+            </span>
+            <span className="font-headline font-bold text-[19px] text-white mt-[3px]">
+              Generac<span className="text-blue-accent"> Service</span>
+            </span>
+          </span>
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-2" aria-label="Main navigation">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              to={link.href}
-              className="font-headline font-bold uppercase tracking-wider text-xs px-4 py-2 hover:bg-foreground hover:text-background transition-colors duration-75 active:translate-y-0.5"
+        <nav className="hidden lg:flex items-center gap-6" aria-label="Main navigation">
+          <div className="flex items-center gap-0.5">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                className="font-body font-medium text-[14.5px] text-[#cdd8ea] px-3 py-2.5 rounded-lg hover:bg-white/[0.07] hover:text-white transition-colors"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+
+          <div className="flex items-center gap-4 pl-2">
+            {business.phone && (
+              <a href={phoneHref} className="flex items-center gap-2.5 group">
+                <span className="grid place-items-center w-9 h-9 rounded-lg bg-white/[0.08] border border-white/15">
+                  <Phone className="h-4 w-4 text-blue-accent" />
+                </span>
+                <span className="flex flex-col leading-tight">
+                  <span className="font-body font-semibold text-[9.5px] tracking-[0.14em] uppercase text-blue-accent">
+                    24/7 Service
+                  </span>
+                  <span className="font-headline font-semibold text-[15px] text-white">{phoneDisplay}</span>
+                </span>
+              </a>
+            )}
+            <button
+              onClick={() => navigate("/get-estimate")}
+              className="inline-flex items-center gap-2 font-body font-semibold text-[14.5px] text-white px-5 py-2.5 rounded-xl bg-green hover:brightness-110 transition-all"
             >
-              {link.name}
-            </Link>
-          ))}
+              Free Estimate
+              <ArrowRight className="h-4 w-4" />
+            </button>
+          </div>
         </nav>
 
-        {/* CTA */}
-        <div className="flex items-center gap-3">
-          {business.phone && (
-            <a
-              href={phoneHref}
-              className="hidden md:inline-flex items-center gap-2 font-headline font-bold uppercase tracking-wider text-xs px-4 py-2 border-2 border-foreground hover:bg-foreground hover:text-background transition-colors duration-75 active:translate-y-0.5"
-            >
-              <Phone className="h-3.5 w-3.5" />
-              {phoneDisplay}
-            </a>
-          )}
-          <button
-            onClick={() => navigate("/get-estimate")}
-            className="hidden md:inline-flex brutalist-cta px-6 py-3"
-          >
-            Get Estimate
-          </button>
-
-          {/* Mobile menu toggle */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 border-2 border-foreground"
-            aria-label="Toggle mobile menu"
-            aria-expanded={isMenuOpen}
-          >
-            {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </button>
-        </div>
+        {/* Mobile toggle */}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="lg:hidden grid place-items-center w-10 h-10 rounded-lg bg-white/[0.08] border border-white/15 text-white"
+          aria-label="Toggle mobile menu"
+          aria-expanded={isMenuOpen}
+        >
+          {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
       </div>
 
       {/* Mobile nav */}
       {isMenuOpen && (
-        <nav
-          className="lg:hidden border-t-2 border-foreground bg-background"
-          aria-label="Mobile navigation"
-        >
-          <div className="flex flex-col">
+        <nav className="lg:hidden border-t border-white/10 bg-slate-header" aria-label="Mobile navigation">
+          <div className="container-x py-2 flex flex-col">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="px-6 py-4 font-headline font-bold uppercase tracking-wider text-sm border-b border-border hover:bg-foreground hover:text-background transition-colors"
+                className="py-3.5 font-body font-medium text-[15px] text-[#cdd8ea] border-b border-white/[0.06] hover:text-white transition-colors"
               >
                 {link.name}
               </Link>
             ))}
-
-            <div className="p-6 flex flex-col gap-3">
+            <div className="py-4 flex flex-col gap-3">
               <button
                 onClick={() => {
                   navigate("/get-estimate");
                   setIsMenuOpen(false);
                 }}
-                className="brutalist-cta w-full"
+                className="inline-flex items-center justify-center gap-2 font-body font-semibold text-[15px] text-white px-6 py-3.5 rounded-xl bg-green"
               >
-                Get Estimate
+                Get a Free Estimate
+                <ArrowRight className="h-4 w-4" />
               </button>
               {business.phone && (
                 <a
                   href={phoneHref}
                   onClick={() => setIsMenuOpen(false)}
-                  className="inline-flex items-center justify-center gap-2 font-headline font-bold uppercase tracking-wider text-sm px-6 py-3 border-2 border-foreground hover:bg-foreground hover:text-background transition-colors"
+                  className="inline-flex items-center justify-center gap-2 font-body font-semibold text-[15px] px-6 py-3 rounded-xl bg-white/[0.08] border border-white/15 text-white"
                 >
-                  <Phone className="h-4 w-4" />
+                  <Phone className="h-4 w-4 text-blue-accent" />
                   {phoneDisplay}
                 </a>
               )}

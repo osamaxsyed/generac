@@ -47,17 +47,22 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Handyman theme colors
-        "forest-green": {
-          DEFAULT: "hsl(var(--forest-green))",
-          light: "hsl(var(--forest-green-light))",
-          dark: "hsl(var(--forest-green-dark))",
+        // Generac brand tokens
+        blue: {
+          DEFAULT: "hsl(var(--blue))",
+          top: "hsl(var(--blue-top))",
+          dark: "hsl(var(--blue-dark))",
+          accent: "hsl(var(--blue-accent))",
+          tint: "hsl(var(--blue-tint))",
         },
-        cream: {
-          DEFAULT: "hsl(var(--cream))",
-          dark: "hsl(var(--cream-dark))",
+        slate: {
+          header: "hsl(var(--slate-header))",
+          hero: "hsl(var(--slate-hero))",
+          footer: "hsl(var(--slate-footer))",
+          600: "hsl(var(--slate-600))",
         },
-        "warm-beige": "hsl(var(--warm-beige))",
+        amber: "hsl(var(--amber))",
+        green: "hsl(var(--green))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -75,30 +80,32 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        headline: ['Epilogue', 'system-ui', 'sans-serif'],
-        body: ['"Work Sans"', 'system-ui', 'sans-serif'],
+        headline: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+        body: ['"DM Sans"', 'system-ui', 'sans-serif'],
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "fade-up": {
+          from: { opacity: "0", transform: "translateY(26px)" },
+          to: { opacity: "1", transform: "none" },
+        },
+        floaty: {
+          "0%,100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-9px)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-up": "fade-up 0.6s ease-out both",
+        floaty: "floaty 6s ease-in-out infinite",
       },
     },
   },

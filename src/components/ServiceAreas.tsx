@@ -7,53 +7,46 @@ const ServiceAreas = () => {
   const cities = [...locationsData].sort((a, b) => b.priority - a.priority);
 
   return (
-    <section className="py-20 md:py-28 bg-background heavy-border-t">
-      <div className="w-full max-w-7xl mx-auto px-6 md:px-10">
-        <div className="mb-12 pb-6 heavy-border-b flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-          <div>
-            <div className="brutalist-section-eyebrow">Coverage Area</div>
-            <h2 className="brutalist-headline text-3xl md:text-5xl text-foreground">
-              Where We Work
-            </h2>
-          </div>
-          <p className="font-body text-base md:text-lg text-muted-foreground md:max-w-md">
-            Standby generator installation and service across {business.county}, NJ —
-            keeping homes powered through {business.utility} outages.
+    <section id="areas" className="section bg-background scroll-mt-[84px]">
+      <div className="container-x">
+        <div className="text-center max-w-2xl mx-auto">
+          <div className="eyebrow">Service Areas</div>
+          <h2 className="display text-3xl md:text-[42px] leading-tight">
+            Serving homes across {business.county}
+          </h2>
+          <p className="font-body text-base md:text-lg text-muted-foreground mt-4">
+            Standby generator installation and service throughout {business.county}, NJ — keeping homes
+            powered through {business.utility} outages.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 heavy-border bg-background">
-          {cities.map((c, i) => (
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mt-12">
+          {cities.map((c) => (
             <Link
               key={c.slug}
               to={`/service-areas/${c.slug}`}
-              className={`group p-5 flex items-center justify-between font-headline font-bold uppercase tracking-wider text-sm hover:bg-foreground hover:text-background transition-colors
-                ${i % 4 !== 3 ? "md:border-r-2 md:last:border-r-0" : ""}
-                ${i % 3 !== 2 ? "border-r-2 md:border-r-0" : ""}
-                ${i % 2 !== 1 ? "border-r-2 md:border-r-2" : ""}
-                border-b-2 border-foreground`}
+              className="card-soft group flex items-center justify-between gap-2 px-4 py-4"
             >
-              <span className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 flex-shrink-0" />
+              <span className="flex items-center gap-2.5 font-body font-semibold text-[15px] text-foreground">
+                <span className="icon-tile !w-9 !h-9">
+                  <MapPin className="h-[18px] w-[18px]" />
+                </span>
                 {c.name}
               </span>
-              <ArrowRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <ArrowRight className="h-4 w-4 text-blue opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
             </Link>
           ))}
         </div>
 
-        <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-4 pt-6 heavy-border-t">
-          <Link
-            to="/service-areas"
-            className="font-headline font-bold uppercase tracking-wider text-sm text-foreground inline-flex items-center gap-2 hover:gap-3 transition-all"
-          >
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <Link to="/service-areas" className="btn-primary">
             View All Service Areas <ArrowRight className="h-4 w-4" />
           </Link>
           <Link
             to="/get-estimate"
-            className="font-headline font-bold uppercase tracking-wider text-sm text-muted-foreground inline-flex items-center gap-2 hover:text-foreground transition-colors"
+            className="font-body font-semibold text-[15px] text-muted-foreground inline-flex items-center gap-2 hover:text-blue transition-colors"
           >
-            Don&apos;t see your town? Get a free estimate
+            Don't see your town? Get a free estimate
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

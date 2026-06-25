@@ -53,149 +53,133 @@ const ContactForm = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
 
   return (
-    <>
-      {/* Hero */}
-      <section className="bg-foreground text-background heavy-border-b py-20 md:py-28">
-        <div className="w-full max-w-6xl mx-auto px-6 md:px-10">
-          <div className="brutalist-section-eyebrow text-background/70">Free Estimate</div>
-          <h1 className="brutalist-headline text-4xl md:text-7xl text-background mb-6 leading-[0.95]">
-            Tell Us About
-            <br />
-            <span className="text-background/70">Your Home.</span>
-          </h1>
-          <p className="font-body text-lg md:text-xl text-background/85 max-w-2xl border-l-4 border-background pl-5">
-            The more details you provide, the more accurate your generator estimate. We respond within 24 hours during business days.
+    <section id="contact" className="section bg-muted scroll-mt-[84px] border-t border-border">
+      <div className="container-x">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <div className="eyebrow">Free Estimate</div>
+          <h2 className="display text-3xl md:text-[42px] leading-tight">
+            Tell us about your home
+          </h2>
+          <p className="font-body text-base md:text-lg text-muted-foreground mt-4">
+            The more details you share, the more accurate your generator estimate. A specialist responds
+            within 1 business hour.
           </p>
         </div>
-      </section>
 
-      {/* Form */}
-      <section className="py-20 bg-background heavy-border-b">
-        <div className="w-full max-w-6xl mx-auto px-6 md:px-10">
-          <div className="grid lg:grid-cols-3 gap-6">
-            {/* Sidebar */}
-            <aside className="lg:col-span-1 lg:order-1 space-y-6">
-              {(business.phone || business.email) && (
-                <div className="bento-card p-6">
-                  <div className="brutalist-section-eyebrow mb-3">Direct Contact</div>
-                  {business.phone && (
-                    <a href={phoneHref} className="flex items-center gap-3 font-headline font-bold text-foreground hover:text-muted-foreground transition-colors mb-3">
-                      <Phone className="h-5 w-5" />
-                      {phoneDisplay}
-                    </a>
-                  )}
-                  {business.email && (
-                    <a href={`mailto:${business.email}`} className="flex items-center gap-3 font-body text-sm text-muted-foreground hover:text-foreground transition-colors break-all">
-                      <Mail className="h-4 w-4 flex-shrink-0" />
-                      {business.email}
-                    </a>
-                  )}
-                </div>
-              )}
-
-              <div className="bento-card p-6">
-                <div className="brutalist-section-eyebrow mb-3">Service Areas</div>
-                <ul className="space-y-1 font-body text-sm text-muted-foreground">
-                  <li>Middletown, NJ</li>
-                  <li>Holmdel, NJ</li>
-                  <li>Colts Neck, NJ</li>
-                  <li>Rumson, NJ</li>
-                  <li>Marlboro, NJ</li>
-                  <li>...and across {business.county}</li>
-                </ul>
+        <div className="grid lg:grid-cols-3 gap-6 items-start">
+          {/* Sidebar */}
+          <aside className="lg:col-span-1 space-y-5">
+            {(business.phone || business.email) && (
+              <div className="card-soft p-6">
+                <div className="eyebrow !mb-3">Direct Contact</div>
+                {business.phone && (
+                  <a href={phoneHref} className="flex items-center gap-3 font-headline font-semibold text-foreground hover:text-blue transition-colors mb-3">
+                    <span className="icon-tile !w-9 !h-9"><Phone className="h-[18px] w-[18px]" /></span>
+                    {phoneDisplay}
+                  </a>
+                )}
+                {business.email && (
+                  <a href={`mailto:${business.email}`} className="flex items-center gap-3 font-body text-sm text-muted-foreground hover:text-blue transition-colors break-all">
+                    <span className="icon-tile !w-9 !h-9"><Mail className="h-[18px] w-[18px]" /></span>
+                    {business.email}
+                  </a>
+                )}
               </div>
-            </aside>
+            )}
 
-            {/* Form */}
-            <div className="lg:col-span-2 lg:order-2 bento-card bg-background p-6 md:p-10">
-              <div className="mb-8 pb-4 heavy-border-b">
-                <div className="brutalist-section-eyebrow">Project Details</div>
-                <h2 className="brutalist-headline text-2xl md:text-3xl text-foreground">Send a Request</h2>
+            <div className="card-soft p-6">
+              <div className="eyebrow !mb-3">Why homeowners call us</div>
+              <ul className="space-y-2.5 font-body text-sm text-muted-foreground">
+                <li className="flex gap-2.5"><span className="text-blue mt-0.5">✓</span> Generators are all we do</li>
+                <li className="flex gap-2.5"><span className="text-blue mt-0.5">✓</span> Local to {business.county}</li>
+                <li className="flex gap-2.5"><span className="text-blue mt-0.5">✓</span> Licensed &amp; insured, NJ code</li>
+                <li className="flex gap-2.5"><span className="text-blue mt-0.5">✓</span> Honest, no-obligation estimates</li>
+              </ul>
+            </div>
+          </aside>
+
+          {/* Form */}
+          <div className="lg:col-span-2 card-soft p-6 md:p-10">
+            <h3 className="font-headline font-bold text-2xl text-foreground mb-6">Request your free estimate</h3>
+
+            <form onSubmit={handleSubmit} className="space-y-5">
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label htmlFor="name" className="font-body font-semibold text-sm text-foreground">Full Name *</Label>
+                  <Input id="name" value={formData.name} onChange={(e) => handleChange("name", e.target.value)} required className="input-soft" />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="phone" className="font-body font-semibold text-sm text-foreground">Phone *</Label>
+                  <Input id="phone" type="tel" value={formData.phone} onChange={(e) => handleChange("phone", e.target.value)} required className="input-soft" />
+                </div>
               </div>
 
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name" className="font-headline font-bold uppercase tracking-wider text-xs">Full Name *</Label>
-                    <Input id="name" value={formData.name} onChange={(e) => handleChange("name", e.target.value)} required className="rounded-none border-2 border-foreground" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="phone" className="font-headline font-bold uppercase tracking-wider text-xs">Phone *</Label>
-                    <Input id="phone" type="tel" value={formData.phone} onChange={(e) => handleChange("phone", e.target.value)} required className="rounded-none border-2 border-foreground" />
-                  </div>
-                </div>
+              <div className="space-y-2">
+                <Label htmlFor="email" className="font-body font-semibold text-sm text-foreground">Email *</Label>
+                <Input id="email" type="email" value={formData.email} onChange={(e) => handleChange("email", e.target.value)} required className="input-soft" />
+              </div>
 
+              <div className="grid md:grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="email" className="font-headline font-bold uppercase tracking-wider text-xs">Email *</Label>
-                  <Input id="email" type="email" value={formData.email} onChange={(e) => handleChange("email", e.target.value)} required className="rounded-none border-2 border-foreground" />
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label className="font-headline font-bold uppercase tracking-wider text-xs">What Do You Need?</Label>
-                    <Select value={formData.service} onValueChange={(v) => handleChange("service", v)}>
-                      <SelectTrigger className="rounded-none border-2 border-foreground">
-                        <SelectValue placeholder="Select a service" />
-                      </SelectTrigger>
-                      <SelectContent className="rounded-none border-2 border-foreground">
-                        <SelectItem value="installation">New Generator Installation</SelectItem>
-                        <SelectItem value="maintenance">Maintenance / Service Plan</SelectItem>
-                        <SelectItem value="repair">Repair / Won't Start</SelectItem>
-                        <SelectItem value="inspection">Inspection / Load Test</SelectItem>
-                        <SelectItem value="battery">Battery or Oil Change</SelectItem>
-                        <SelectItem value="electrical">Transfer Switch / Electrical</SelectItem>
-                        <SelectItem value="other">Other / Not Sure</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="location" className="font-headline font-bold uppercase tracking-wider text-xs">Town</Label>
-                    <Input id="location" placeholder="Your town in Monmouth County" value={formData.location} onChange={(e) => handleChange("location", e.target.value)} className="rounded-none border-2 border-foreground" />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label className="font-headline font-bold uppercase tracking-wider text-xs">Preferred Timeline</Label>
-                  <Select value={formData.timeline} onValueChange={(v) => handleChange("timeline", v)}>
-                    <SelectTrigger className="rounded-none border-2 border-foreground">
-                      <SelectValue placeholder="When would you like to start?" />
-                    </SelectTrigger>
-                    <SelectContent className="rounded-none border-2 border-foreground">
-                      <SelectItem value="asap">ASAP</SelectItem>
-                      <SelectItem value="week">Within a week</SelectItem>
-                      <SelectItem value="month">Within a month</SelectItem>
-                      <SelectItem value="quarter">Next 3 months</SelectItem>
-                      <SelectItem value="flexible">I'm flexible</SelectItem>
+                  <Label className="font-body font-semibold text-sm text-foreground">What Do You Need?</Label>
+                  <Select value={formData.service} onValueChange={(v) => handleChange("service", v)}>
+                    <SelectTrigger className="input-soft"><SelectValue placeholder="Select a service" /></SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="installation">New Generator Installation</SelectItem>
+                      <SelectItem value="maintenance">Maintenance / Service Plan</SelectItem>
+                      <SelectItem value="repair">Repair / Won't Start</SelectItem>
+                      <SelectItem value="inspection">Inspection / Load Test</SelectItem>
+                      <SelectItem value="battery">Battery or Oil Change</SelectItem>
+                      <SelectItem value="electrical">Transfer Switch / Electrical</SelectItem>
+                      <SelectItem value="other">Other / Not Sure</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
-
                 <div className="space-y-2">
-                  <Label htmlFor="description" className="font-headline font-bold uppercase tracking-wider text-xs">Tell Us More *</Label>
-                  <Textarea
-                    id="description"
-                    placeholder="Describe what you need — home size, fuel type (natural gas or propane), whether you have an existing generator, and any issues you're seeing."
-                    className="min-h-[120px] rounded-none border-2 border-foreground"
-                    value={formData.description}
-                    onChange={(e) => handleChange("description", e.target.value)}
-                    required
-                  />
+                  <Label htmlFor="location" className="font-body font-semibold text-sm text-foreground">Town</Label>
+                  <Input id="location" placeholder={`Your town in ${business.county}`} value={formData.location} onChange={(e) => handleChange("location", e.target.value)} className="input-soft" />
                 </div>
+              </div>
 
-                <button type="submit" className="brutalist-cta w-full">
-                  <Send className="h-4 w-4" />
-                  Send Estimate Request
-                </button>
+              <div className="space-y-2">
+                <Label className="font-body font-semibold text-sm text-foreground">Preferred Timeline</Label>
+                <Select value={formData.timeline} onValueChange={(v) => handleChange("timeline", v)}>
+                  <SelectTrigger className="input-soft"><SelectValue placeholder="When would you like to start?" /></SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="asap">ASAP</SelectItem>
+                    <SelectItem value="week">Within a week</SelectItem>
+                    <SelectItem value="month">Within a month</SelectItem>
+                    <SelectItem value="quarter">Next 3 months</SelectItem>
+                    <SelectItem value="flexible">I'm flexible</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
 
-                <p className="font-body text-xs text-muted-foreground text-center">
-                  We typically respond within 2–4 hours during business hours.
-                </p>
-              </form>
-            </div>
+              <div className="space-y-2">
+                <Label htmlFor="description" className="font-body font-semibold text-sm text-foreground">Tell Us More *</Label>
+                <Textarea
+                  id="description"
+                  placeholder="Home size, fuel type (natural gas or propane), whether you have an existing generator, and any issues you're seeing."
+                  className="input-soft min-h-[120px]"
+                  value={formData.description}
+                  onChange={(e) => handleChange("description", e.target.value)}
+                  required
+                />
+              </div>
+
+              <button type="submit" className="btn-primary w-full">
+                <Send className="h-4 w-4" />
+                Send Estimate Request
+              </button>
+
+              <p className="font-body text-xs text-muted-foreground text-center">
+                No spam. Your info is only used to prepare your estimate.
+              </p>
+            </form>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 

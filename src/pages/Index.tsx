@@ -1,8 +1,11 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import ServicesOverview from "@/components/ServicesOverview";
+import Services from "@/components/Services";
+import About from "@/components/About";
 import HowItWorks from "@/components/HowItWorks";
+import Testimonials from "@/components/Testimonials";
 import ServiceAreas from "@/components/ServiceAreas";
+import EmergencyBanner from "@/components/EmergencyBanner";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -20,9 +23,12 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <ServicesOverview />
+        <Services />
+        <About />
         <HowItWorks />
+        <Testimonials />
         <ServiceAreas />
+        <EmergencyBanner />
         <ContactForm />
       </main>
       <Footer />

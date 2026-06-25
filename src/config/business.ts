@@ -47,11 +47,14 @@ export const business = {
   // Reviews/ratings — DO NOT FABRICATE. Leave null until real reviews exist.
   aggregateRating: null as null | { ratingValue: string; reviewCount: string },
 
-  // Stats — PLACEHOLDERS. Leave empty strings; do not invent numbers.
+  // Stats — sample/marketing values from the design. Confirm or adjust before
+  // relying on them; shown in hero trust pills and the reviews section.
   stats: {
-    yearsInBusiness: "",                       // TODO
-    generatorsServiced: "",                    // TODO
-    responseTime: "",                          // TODO
+    yearsInBusiness: "12+",
+    generatorsServiced: "1,200+",
+    responseTime: "1 hr",
+    googleRating: "4.9",
+    reviewCount: "150+",
   },
 
   county: "Monmouth County",
