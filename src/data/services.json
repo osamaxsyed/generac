@@ -18,12 +18,28 @@
     "averageTimeline": "1-2 days",
     "priceRange": "$$$",
     "priority": 1.0,
-    "relatedServices": ["standby-generators", "electrical-services", "generator-maintenance"],
+    "relatedServices": [
+      "standby-generators",
+      "electrical-services",
+      "generator-maintenance"
+    ],
     "faqs": [
-      {"question": "How long does a generator installation take?", "answer": "A typical standby generator installation is completed in one to two days once permits are in hand. Day one covers the pad, generator set, fuel line, and transfer switch; final electrical tie-in and the startup commissioning follow. Larger whole-house systems or installs requiring a gas meter upgrade can take longer, and we provide a clear schedule before work begins."},
-      {"question": "Do I need a permit to install a standby generator in Monmouth County?", "answer": "Yes. Standby generator installations in New Jersey require both electrical and, where a gas line is involved, plumbing/mechanical permits through your local municipality, plus an inspection. We coordinate the permit process and schedule the required inspections as part of the installation."},
-      {"question": "What size generator do I need for my home?", "answer": "Generator sizing depends on the square footage of your home, whether you want to power essential circuits only or the whole house, and large loads like central air, well pumps, and electric ranges. We perform an on-site load calculation rather than guessing, so the unit is sized correctly for your actual usage."},
-      {"question": "Should I run my generator on natural gas or propane?", "answer": "If your home already has natural gas service from the utility, that is usually the simplest and lowest-maintenance fuel because it never needs refilling. Homes without gas service typically run on a propane tank. We assess what is available at your property and recommend the right fuel setup for your location."}
+      {
+        "question": "How long does a generator installation take?",
+        "answer": "A typical standby generator installation is completed in one to two days once permits are in hand. Day one covers the pad, generator set, fuel line, and transfer switch; final electrical tie-in and the startup commissioning follow. Larger whole-house systems or installs requiring a gas meter upgrade can take longer, and we provide a clear schedule before work begins."
+      },
+      {
+        "question": "Do I need a permit to install a standby generator in Monmouth County?",
+        "answer": "Yes. Standby generator installations in New Jersey require both electrical and, where a gas line is involved, plumbing/mechanical permits through your local municipality, plus an inspection. We coordinate the permit process and schedule the required inspections as part of the installation."
+      },
+      {
+        "question": "What size generator do I need for my home?",
+        "answer": "Generator sizing depends on the square footage of your home, whether you want to power essential circuits only or the whole house, and large loads like central air, well pumps, and electric ranges. We perform an on-site load calculation rather than guessing, so the unit is sized correctly for your actual usage."
+      },
+      {
+        "question": "Should I run my generator on natural gas or propane?",
+        "answer": "If your home already has natural gas service from the utility, that is usually the simplest and lowest-maintenance fuel because it never needs refilling. Homes without gas service typically run on a propane tank. We assess what is available at your property and recommend the right fuel setup for your location."
+      }
     ]
   },
   {
@@ -45,11 +61,24 @@
     "averageTimeline": "1-2 days",
     "priceRange": "$$$",
     "priority": 1.0,
-    "relatedServices": ["generator-installation", "generator-maintenance", "load-testing"],
+    "relatedServices": [
+      "generator-installation",
+      "generator-maintenance",
+      "load-testing"
+    ],
     "faqs": [
-      {"question": "How is a standby generator different from a portable generator?", "answer": "A standby generator is permanently installed outside your home, connected to a fixed fuel supply, and starts automatically the moment the power goes out — no cords, no gasoline, no manual setup. A portable generator must be rolled out, fueled, and connected by hand, and cannot safely power your home's wiring without additional equipment."},
-      {"question": "How quickly does a standby generator restore power?", "answer": "Most automatic standby systems detect an outage and transfer your home to generator power within seconds. You may notice the lights blink once as the automatic transfer switch hands off, then power is restored and stays on until utility service returns."},
-      {"question": "Will a standby generator run my whole house?", "answer": "It can, depending on the size of the unit and your home's electrical demand. Some homeowners choose a whole-house system that powers everything; others select an essential-circuit setup that covers heat, refrigeration, well pump, and key outlets at a lower cost. We size the system to your priorities during the on-site survey."}
+      {
+        "question": "How is a standby generator different from a portable generator?",
+        "answer": "A standby generator is permanently installed outside your home, connected to a fixed fuel supply, and starts automatically the moment the power goes out \u2014 no cords, no gasoline, no manual setup. A portable generator must be rolled out, fueled, and connected by hand, and cannot safely power your home's wiring without additional equipment."
+      },
+      {
+        "question": "How quickly does a standby generator restore power?",
+        "answer": "Most automatic standby systems detect an outage and transfer your home to generator power within seconds. You may notice the lights blink once as the automatic transfer switch hands off, then power is restored and stays on until utility service returns."
+      },
+      {
+        "question": "Will a standby generator run my whole house?",
+        "answer": "It can, depending on the size of the unit and your home's electrical demand. Some homeowners choose a whole-house system that powers everything; others select an essential-circuit setup that covers heat, refrigeration, well pump, and key outlets at a lower cost. We size the system to your priorities during the on-site survey."
+      }
     ]
   },
   {
@@ -71,11 +100,153 @@
     "averageTimeline": "1-2 hours",
     "priceRange": "$$",
     "priority": 0.95,
-    "relatedServices": ["seasonal-oil-changes", "preventive-maintenance", "generator-inspections"],
+    "relatedServices": [
+      "seasonal-oil-changes",
+      "preventive-maintenance",
+      "generator-inspections"
+    ],
     "faqs": [
-      {"question": "How often should a standby generator be serviced?", "answer": "Most standby generators should be serviced at least once a year, with an oil change typically due every year or after a set number of run hours, whichever comes first. Homes that experience frequent or long outages may need service more often because the unit accumulates run time. We track service intervals for the units we maintain."},
-      {"question": "What happens if I skip generator maintenance?", "answer": "A generator that sits unmaintained is the one most likely to fail when an outage actually hits. Old oil, a weak battery, fouled spark plugs, or stale fuel are the most common reasons a standby unit won't start. Regular maintenance catches these issues during good weather rather than during a storm."},
-      {"question": "Do you service generators you didn't install?", "answer": "Yes. We service and maintain existing standby generators regardless of who installed them. We start with a full inspection to document the unit's condition, then perform the maintenance it's due for and set you up on a regular service schedule."}
+      {
+        "question": "How often should a standby generator be serviced?",
+        "answer": "Most standby generators should be serviced at least once a year, with an oil change typically due every year or after a set number of run hours, whichever comes first. Homes that experience frequent or long outages may need service more often because the unit accumulates run time. We track service intervals for the units we maintain."
+      },
+      {
+        "question": "What happens if I skip generator maintenance?",
+        "answer": "A generator that sits unmaintained is the one most likely to fail when an outage actually hits. Old oil, a weak battery, fouled spark plugs, or stale fuel are the most common reasons a standby unit won't start. Regular maintenance catches these issues during good weather rather than during a storm."
+      },
+      {
+        "question": "Do you service generators you didn't install?",
+        "answer": "Yes. We service and maintain existing standby generators regardless of who installed them. We start with a full inspection to document the unit's condition, then perform the maintenance it's due for and set you up on a regular service schedule."
+      }
+    ],
+    "h1": "Reliable Generator Maintenance in Monmouth County, NJ",
+    "metaTitleGeo": "Generator Maintenance in Monmouth County, NJ | Monmouth County Generac",
+    "metaDescriptionGeo": "Scheduled standby generator maintenance in Monmouth County, NJ. Oil, filters, battery and full load testing so your unit starts in the next JCP&L outage. Free quotes.",
+    "intro": [
+      "A standby generator only earns its keep if it starts the moment the power goes out. In Monmouth County, NJ, that moment usually arrives during a nor'easter or a summer storm \u2014 exactly when you cannot afford a unit that won't crank. Routine generator maintenance is what keeps that from happening.",
+      "We are generator specialists serving only Monmouth County, so every maintenance visit is built around how homes here actually lose power: long JCP&L outages in wooded and Bayshore neighborhoods, cold-weather starts, and units that may sit unused for months between storms.",
+      "Whether your generator is under a manufacturer maintenance interval or hasn't been touched in years, we get it back to a known-good, storm-ready condition and keep it there."
+    ],
+    "whyItMatters": [
+      {
+        "head": "Most no-start failures are preventable",
+        "body": "The top reasons a standby generator won't start \u2014 a weak battery, stale fuel, old oil, a fouled spark plug \u2014 are exactly what scheduled maintenance catches. We find them on a clear day instead of during an outage."
+      },
+      {
+        "head": "Monmouth's outages are long and weather-driven",
+        "body": "JCP&L restoration after a nor'easter can take days in the county's wooded and coastal townships. A maintained generator carries your heat, refrigeration, sump pump, and well water through that window without interruption."
+      },
+      {
+        "head": "Cold-weather starts are hard on neglected units",
+        "body": "New Jersey winters demand the right oil grade and a strong battery for a clean cold start. Seasonal service tunes the unit for the conditions it will actually face."
+      },
+      {
+        "head": "It protects your warranty and your investment",
+        "body": "Manufacturers expect documented maintenance at set intervals. We service to those intervals and keep records, so your coverage and your unit's lifespan both stay intact."
+      }
+    ],
+    "whatsIncluded": [
+      {
+        "group": "Engine service",
+        "items": [
+          "Oil and oil filter change with the correct seasonal grade",
+          "Air filter inspection and replacement",
+          "Fuel filter service",
+          "Spark plug inspection and replacement"
+        ]
+      },
+      {
+        "group": "Electrical & battery",
+        "items": [
+          "Battery load test and terminal cleaning",
+          "Charger and connection check",
+          "Control board and sensor check",
+          "Automatic transfer switch operation check"
+        ]
+      },
+      {
+        "group": "Readiness verification",
+        "items": [
+          "Full start and run test",
+          "Transfer-to-generator test under load",
+          "Coolant and fluid level checks (liquid-cooled units)",
+          "Inspection for leaks, corrosion, and pest intrusion"
+        ]
+      },
+      {
+        "group": "Quoted separately if needed",
+        "items": [
+          "Battery replacement",
+          "Major repairs or parts beyond routine wear",
+          "Load testing for commercial-size units"
+        ]
+      }
+    ],
+    "howItWorks": [
+      {
+        "step": 1,
+        "head": "Schedule your visit",
+        "body": "Tell us your generator's make and roughly when it was last serviced. We book a visit that fits your schedule across Monmouth County."
+      },
+      {
+        "step": 2,
+        "head": "Full inspection & service",
+        "body": "We perform the engine, electrical, and battery service above and document the unit's condition."
+      },
+      {
+        "step": 3,
+        "head": "Run & transfer test",
+        "body": "We start the unit and verify it transfers your home to generator power correctly under load \u2014 the real test the weekly self-test skips."
+      },
+      {
+        "step": 4,
+        "head": "Report & schedule",
+        "body": "You get a clear summary of what we did and found, plus an optional maintenance plan so the next service happens on time automatically."
+      }
+    ],
+    "inlineLinks": [
+      {
+        "anchor": "preventive maintenance plans",
+        "to": "/services/preventive-maintenance"
+      },
+      {
+        "anchor": "battery replacement",
+        "to": "/services/battery-replacement"
+      },
+      {
+        "anchor": "load testing",
+        "to": "/services/load-testing"
+      },
+      {
+        "anchor": "seasonal oil changes",
+        "to": "/services/seasonal-oil-changes"
+      }
+    ],
+    "image": {
+      "alt": "Technician performing scheduled maintenance on a Generac standby generator at a Monmouth County, NJ home",
+      "caption": "Routine generator maintenance keeps Monmouth County homes storm-ready."
+    },
+    "faqsExtended": [
+      {
+        "question": "How often should a standby generator be maintained in Monmouth County?",
+        "answer": "At least once a year, with an oil change due annually or after a set number of run hours, whichever comes first. Homes that ride out frequent JCP&L outages accumulate run time faster and may need service more often. We track intervals for the units we maintain."
+      },
+      {
+        "question": "What's the most common reason a generator won't start during an outage?",
+        "answer": "A weak or dead battery is the single most common cause, followed by stale fuel and old oil. All three are routine maintenance items, which is why an unmaintained unit is the one most likely to fail when a storm hits."
+      },
+      {
+        "question": "Do you service generators you didn't install?",
+        "answer": "Yes. We maintain standby generators of any brand regardless of who installed them. We start with a full inspection to document the unit's condition, then perform the service it's due for."
+      },
+      {
+        "question": "Will maintenance keep my manufacturer warranty valid?",
+        "answer": "Manufacturers require documented maintenance at set intervals to keep coverage in force. We service to those intervals and keep records, so your warranty stays protected."
+      },
+      {
+        "question": "Can maintenance be done before a specific storm season?",
+        "answer": "Absolutely \u2014 a pre-season visit is the most reliable way to ensure your generator is ready before the nor'easters arrive. Many Monmouth County homeowners schedule service in early fall for exactly this reason."
+      }
     ]
   },
   {
@@ -97,11 +268,24 @@
     "averageTimeline": "Same day - 1 week",
     "priceRange": "$$-$$$",
     "priority": 0.95,
-    "relatedServices": ["generator-maintenance", "load-testing", "generator-inspections"],
+    "relatedServices": [
+      "generator-maintenance",
+      "load-testing",
+      "generator-inspections"
+    ],
     "faqs": [
-      {"question": "Why won't my standby generator start?", "answer": "The most common causes of a no-start are a dead or weak battery, stale fuel, a tripped breaker, a fouled spark plug, or a control setting left in the off position after a previous service. We diagnose the root cause rather than swapping parts, then repair the specific failure and verify the unit starts and transfers correctly."},
-      {"question": "My generator runs but the house has no power — what's wrong?", "answer": "If the generator runs but power doesn't reach the home, the issue is usually in the automatic transfer switch or the electrical connection rather than the generator itself. This requires diagnosis of the switch, the wiring, and the controls. We test the full transfer path to isolate and repair the fault."},
-      {"question": "Do you offer emergency generator repair?", "answer": "We prioritize generator repairs during and after major outages when standby power matters most. Availability depends on storm conditions and demand. Keeping your unit on a regular maintenance schedule is the best way to avoid an emergency in the first place, since most failures are preventable."}
+      {
+        "question": "Why won't my standby generator start?",
+        "answer": "The most common causes of a no-start are a dead or weak battery, stale fuel, a tripped breaker, a fouled spark plug, or a control setting left in the off position after a previous service. We diagnose the root cause rather than swapping parts, then repair the specific failure and verify the unit starts and transfers correctly."
+      },
+      {
+        "question": "My generator runs but the house has no power \u2014 what's wrong?",
+        "answer": "If the generator runs but power doesn't reach the home, the issue is usually in the automatic transfer switch or the electrical connection rather than the generator itself. This requires diagnosis of the switch, the wiring, and the controls. We test the full transfer path to isolate and repair the fault."
+      },
+      {
+        "question": "Do you offer emergency generator repair?",
+        "answer": "We prioritize generator repairs during and after major outages when standby power matters most. Availability depends on storm conditions and demand. Keeping your unit on a regular maintenance schedule is the best way to avoid an emergency in the first place, since most failures are preventable."
+      }
     ]
   },
   {
@@ -123,11 +307,24 @@
     "averageTimeline": "Half day - 2 days",
     "priceRange": "$$-$$$",
     "priority": 0.85,
-    "relatedServices": ["generator-installation", "standby-generators", "load-testing"],
+    "relatedServices": [
+      "generator-installation",
+      "standby-generators",
+      "load-testing"
+    ],
     "faqs": [
-      {"question": "What is a transfer switch and do I need one?", "answer": "A transfer switch is the device that safely moves your home between utility power and generator power. It is required for any permanently connected generator because it prevents dangerous backfeed onto the utility lines and protects your equipment. An automatic transfer switch does this on its own; a manual switch requires you to operate it during an outage."},
-      {"question": "Will my electrical panel need to be upgraded for a generator?", "answer": "Sometimes. Older or fully loaded panels may not have the capacity or space to safely add a generator circuit and transfer switch. We evaluate your existing panel during the assessment and recommend an upgrade only if it's genuinely required for a safe, code-compliant installation."},
-      {"question": "Are your electrical services code-compliant in New Jersey?", "answer": "All electrical work is performed to the National Electrical Code and New Jersey requirements, with permits and inspections where the work calls for them. Code-compliant installation is what keeps your system safe, insurable, and reliable over the long term."}
+      {
+        "question": "What is a transfer switch and do I need one?",
+        "answer": "A transfer switch is the device that safely moves your home between utility power and generator power. It is required for any permanently connected generator because it prevents dangerous backfeed onto the utility lines and protects your equipment. An automatic transfer switch does this on its own; a manual switch requires you to operate it during an outage."
+      },
+      {
+        "question": "Will my electrical panel need to be upgraded for a generator?",
+        "answer": "Sometimes. Older or fully loaded panels may not have the capacity or space to safely add a generator circuit and transfer switch. We evaluate your existing panel during the assessment and recommend an upgrade only if it's genuinely required for a safe, code-compliant installation."
+      },
+      {
+        "question": "Are your electrical services code-compliant in New Jersey?",
+        "answer": "All electrical work is performed to the National Electrical Code and New Jersey requirements, with permits and inspections where the work calls for them. Code-compliant installation is what keeps your system safe, insurable, and reliable over the long term."
+      }
     ]
   },
   {
@@ -149,11 +346,24 @@
     "averageTimeline": "1 hour",
     "priceRange": "$",
     "priority": 0.8,
-    "relatedServices": ["generator-maintenance", "preventive-maintenance", "battery-replacement"],
+    "relatedServices": [
+      "generator-maintenance",
+      "preventive-maintenance",
+      "battery-replacement"
+    ],
     "faqs": [
-      {"question": "How often does a generator need an oil change?", "answer": "Most standby generators need an oil change once a year or after a set number of run hours, whichever comes first. Units that run frequently during outages accumulate hours faster and may need more frequent changes. A seasonal change before storm season is a reliable rule of thumb for most homeowners."},
-      {"question": "Why does the season matter for generator oil?", "answer": "Oil viscosity changes with temperature, and the correct grade helps the engine start and run cleanly in cold New Jersey winters versus warm summers. Using the right seasonal oil reduces wear and improves cold-start reliability when you need the generator most."},
-      {"question": "Can I change the generator oil myself?", "answer": "Some homeowners do, but the oil type, capacity, and filter vary by model, and an incorrect oil or an overfill can cause problems. Having it done as part of a service visit also means the battery, connections, and start function get checked at the same time."}
+      {
+        "question": "How often does a generator need an oil change?",
+        "answer": "Most standby generators need an oil change once a year or after a set number of run hours, whichever comes first. Units that run frequently during outages accumulate hours faster and may need more frequent changes. A seasonal change before storm season is a reliable rule of thumb for most homeowners."
+      },
+      {
+        "question": "Why does the season matter for generator oil?",
+        "answer": "Oil viscosity changes with temperature, and the correct grade helps the engine start and run cleanly in cold New Jersey winters versus warm summers. Using the right seasonal oil reduces wear and improves cold-start reliability when you need the generator most."
+      },
+      {
+        "question": "Can I change the generator oil myself?",
+        "answer": "Some homeowners do, but the oil type, capacity, and filter vary by model, and an incorrect oil or an overfill can cause problems. Having it done as part of a service visit also means the battery, connections, and start function get checked at the same time."
+      }
     ]
   },
   {
@@ -175,11 +385,24 @@
     "averageTimeline": "Under 1 hour",
     "priceRange": "$",
     "priority": 0.8,
-    "relatedServices": ["generator-maintenance", "seasonal-oil-changes", "generator-repair"],
+    "relatedServices": [
+      "generator-maintenance",
+      "seasonal-oil-changes",
+      "generator-repair"
+    ],
     "faqs": [
-      {"question": "How long does a generator battery last?", "answer": "A standby generator battery typically lasts a few years, but cold winters, heat, and infrequent use shorten that lifespan. Because a weak battery is the single most common reason a generator won't start, many homeowners replace it on a regular schedule rather than waiting for it to fail."},
-      {"question": "How do I know if my generator battery is failing?", "answer": "Warning signs include slow cranking during the self-test, a battery warning on the controller, or the unit failing to start. The most reliable way to know is a load test, which measures whether the battery can actually deliver starting power rather than just showing a resting voltage."},
-      {"question": "Will replacing the battery fix a generator that won't start?", "answer": "Often, yes — a dead battery is the most frequent no-start cause. But if the battery tests fine, the problem lies elsewhere, such as fuel, ignition, or the controller. We test before replacing so you only pay to fix the actual issue."}
+      {
+        "question": "How long does a generator battery last?",
+        "answer": "A standby generator battery typically lasts a few years, but cold winters, heat, and infrequent use shorten that lifespan. Because a weak battery is the single most common reason a generator won't start, many homeowners replace it on a regular schedule rather than waiting for it to fail."
+      },
+      {
+        "question": "How do I know if my generator battery is failing?",
+        "answer": "Warning signs include slow cranking during the self-test, a battery warning on the controller, or the unit failing to start. The most reliable way to know is a load test, which measures whether the battery can actually deliver starting power rather than just showing a resting voltage."
+      },
+      {
+        "question": "Will replacing the battery fix a generator that won't start?",
+        "answer": "Often, yes \u2014 a dead battery is the most frequent no-start cause. But if the battery tests fine, the problem lies elsewhere, such as fuel, ignition, or the controller. We test before replacing so you only pay to fix the actual issue."
+      }
     ]
   },
   {
@@ -201,11 +424,24 @@
     "averageTimeline": "1-2 hours",
     "priceRange": "$",
     "priority": 0.8,
-    "relatedServices": ["generator-maintenance", "load-testing", "preventive-maintenance"],
+    "relatedServices": [
+      "generator-maintenance",
+      "load-testing",
+      "preventive-maintenance"
+    ],
     "faqs": [
-      {"question": "Why would I need a generator inspection?", "answer": "An inspection is valuable when you buy a home with an existing generator and don't know its service history, before storm season, or when a unit hasn't run in a while. It documents the generator's true condition so you know whether it's ready to perform or needs attention before the next outage."},
-      {"question": "What does a generator inspection include?", "answer": "We check the engine, battery, fuel system, oil, filters, and the automatic transfer switch, then run the unit and verify it transfers power correctly. You receive a written report describing the condition of each component and any recommended repairs or maintenance."},
-      {"question": "I just bought a house with a generator — should I inspect it?", "answer": "Yes. Without the prior owner's service records, there's no way to know when the generator was last maintained or whether it still works. An inspection gives you a clear baseline and a maintenance plan so you can rely on the unit during the first storm you face."}
+      {
+        "question": "Why would I need a generator inspection?",
+        "answer": "An inspection is valuable when you buy a home with an existing generator and don't know its service history, before storm season, or when a unit hasn't run in a while. It documents the generator's true condition so you know whether it's ready to perform or needs attention before the next outage."
+      },
+      {
+        "question": "What does a generator inspection include?",
+        "answer": "We check the engine, battery, fuel system, oil, filters, and the automatic transfer switch, then run the unit and verify it transfers power correctly. You receive a written report describing the condition of each component and any recommended repairs or maintenance."
+      },
+      {
+        "question": "I just bought a house with a generator \u2014 should I inspect it?",
+        "answer": "Yes. Without the prior owner's service records, there's no way to know when the generator was last maintained or whether it still works. An inspection gives you a clear baseline and a maintenance plan so you can rely on the unit during the first storm you face."
+      }
     ]
   },
   {
@@ -227,11 +463,24 @@
     "averageTimeline": "1-2 hours",
     "priceRange": "$$",
     "priority": 0.8,
-    "relatedServices": ["generator-inspections", "generator-maintenance", "generator-repair"],
+    "relatedServices": [
+      "generator-inspections",
+      "generator-maintenance",
+      "generator-repair"
+    ],
     "faqs": [
-      {"question": "What is generator load testing?", "answer": "Load testing applies a real electrical load to your generator and measures whether it can produce and sustain the required power. A generator's weekly self-test usually runs unloaded, so it can mask problems that only appear under demand. Load testing reveals whether the unit will actually carry your home during an outage."},
-      {"question": "Why isn't the weekly self-test enough?", "answer": "The self-test confirms the engine starts and runs, but it typically doesn't apply your home's full electrical load. A unit can pass its self-test and still struggle or fail when an outage forces it to power your air conditioning, well pump, and appliances at once. Load testing closes that gap."},
-      {"question": "How often should a generator be load tested?", "answer": "Load testing is commonly done annually, often alongside routine maintenance, and any time you suspect the generator isn't performing as it should. It's also worthwhile after major repairs to confirm the unit is back to full capacity."}
+      {
+        "question": "What is generator load testing?",
+        "answer": "Load testing applies a real electrical load to your generator and measures whether it can produce and sustain the required power. A generator's weekly self-test usually runs unloaded, so it can mask problems that only appear under demand. Load testing reveals whether the unit will actually carry your home during an outage."
+      },
+      {
+        "question": "Why isn't the weekly self-test enough?",
+        "answer": "The self-test confirms the engine starts and runs, but it typically doesn't apply your home's full electrical load. A unit can pass its self-test and still struggle or fail when an outage forces it to power your air conditioning, well pump, and appliances at once. Load testing closes that gap."
+      },
+      {
+        "question": "How often should a generator be load tested?",
+        "answer": "Load testing is commonly done annually, often alongside routine maintenance, and any time you suspect the generator isn't performing as it should. It's also worthwhile after major repairs to confirm the unit is back to full capacity."
+      }
     ]
   },
   {
@@ -253,11 +502,24 @@
     "averageTimeline": "Ongoing plan",
     "priceRange": "$$",
     "priority": 0.85,
-    "relatedServices": ["generator-maintenance", "seasonal-oil-changes", "load-testing"],
+    "relatedServices": [
+      "generator-maintenance",
+      "seasonal-oil-changes",
+      "load-testing"
+    ],
     "faqs": [
-      {"question": "What is a preventive maintenance plan?", "answer": "A preventive maintenance plan puts your standby generator on a recurring service schedule so oil changes, battery checks, and system tests happen on time without you having to track them. The goal is to catch wear and weak components during good weather so the unit is ready when an outage hits."},
-      {"question": "Is a maintenance plan worth it for a home generator?", "answer": "For most homeowners, yes. A standby generator only earns its value if it starts during an outage, and the failures that prevent that — dead batteries, old oil, stale fuel — are exactly what scheduled maintenance prevents. A plan also means the work is tracked and you're not relying on memory."},
-      {"question": "What's included in your preventive maintenance plan?", "answer": "Plans include scheduled visits with oil and filter service, battery testing, a full system inspection, and a transfer-switch and run test, along with service-history tracking and reminders. We'll recommend an annual or semi-annual schedule based on how often your generator runs."}
+      {
+        "question": "What is a preventive maintenance plan?",
+        "answer": "A preventive maintenance plan puts your standby generator on a recurring service schedule so oil changes, battery checks, and system tests happen on time without you having to track them. The goal is to catch wear and weak components during good weather so the unit is ready when an outage hits."
+      },
+      {
+        "question": "Is a maintenance plan worth it for a home generator?",
+        "answer": "For most homeowners, yes. A standby generator only earns its value if it starts during an outage, and the failures that prevent that \u2014 dead batteries, old oil, stale fuel \u2014 are exactly what scheduled maintenance prevents. A plan also means the work is tracked and you're not relying on memory."
+      },
+      {
+        "question": "What's included in your preventive maintenance plan?",
+        "answer": "Plans include scheduled visits with oil and filter service, battery testing, a full system inspection, and a transfer-switch and run test, along with service-history tracking and reminders. We'll recommend an annual or semi-annual schedule based on how often your generator runs."
+      }
     ]
   }
 ]

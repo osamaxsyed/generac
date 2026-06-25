@@ -14,7 +14,7 @@ const EmergencyBanner = () => {
 
   return (
     <section id="emergency" className="relative overflow-hidden bg-slate-hero scroll-mt-[84px]">
-      <div className="absolute inset-0 bg-[linear-gradient(115deg,#0a1428,#101f3b_46%,#0b1830)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(115deg,#1a1c20,#26292f_46%,#1a1c20)]" />
       <div className="absolute inset-0 bg-[radial-gradient(90%_80%_at_78%_12%,rgba(245,158,11,0.16),transparent_55%)]" />
       <div className="absolute inset-0 opacity-40 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[length:38px_38px]" />
 
@@ -30,7 +30,7 @@ const EmergencyBanner = () => {
           <h2 className="display text-[clamp(28px,3.6vw,46px)] leading-[1.08] text-white mt-5">
             Generator down? We respond fast.
           </h2>
-          <p className="font-body text-[clamp(15.5px,1.5vw,18px)] leading-relaxed text-[#b8c6dc] mt-4 max-w-[540px]">
+          <p className="font-body text-[clamp(15.5px,1.5vw,18px)] leading-relaxed text-[#c4c8d0] mt-4 max-w-[540px]">
             When the power's out and your backup won't cooperate, every minute counts. Our specialists
             are on call around the clock for the issues that leave {business.county} homes in the dark.
           </p>

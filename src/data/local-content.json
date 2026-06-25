@@ -1,0 +1,23 @@
+{
+  "utility": {
+    "name": "JCP&L",
+    "full": "Jersey Central Power & Light",
+    "outageUrl": "https://www.firstenergycorp.com/outages_help/report_problems.html",
+    "outageLabel": "JCP&L outage center",
+    "note": "JCP&L (Jersey Central Power & Light) is the electric utility for almost all of Monmouth County. Its overhead distribution network runs through heavily wooded neighborhoods and along the Bayshore and coast, which is why a single nor'easter or summer thunderstorm can knock out power to whole towns and why restoration in the outer townships can stretch into multiple days."
+  },
+  "county": {
+    "name": "Monmouth County",
+    "govLabel": "Monmouth County, NJ official site",
+    "govUrl": "https://www.monmouthcountynj.gov/"
+  },
+  "stormContext": [
+    "Monmouth County sits in the path of the nor'easters that batter the Jersey Shore every fall and winter, and these slow-moving storms are the single most common cause of multi-day power outages here.",
+    "Coastal and Bayshore communities — from the Navesink and Shrewsbury riverfronts to the bayfront sections of Middletown — are especially exposed to wind-driven outages and storm surge that can take down JCP&L lines.",
+    "Homeowners across the county remember Superstorm Sandy, when much of Monmouth lost power for a week or more. That experience is why a properly maintained standby generator is no longer a luxury here — it's how families keep heat, refrigeration, sump pumps, and well water running when the grid goes down."
+  ],
+  "externalAuthority": [
+    { "label": "Monmouth County, NJ official site", "url": "https://www.monmouthcountynj.gov/" },
+    { "label": "JCP&L outage center", "url": "https://www.firstenergycorp.com/outages_help/report_problems.html" }
+  ]
+}

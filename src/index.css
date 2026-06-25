@@ -19,35 +19,37 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    --primary: 221 83% 53%;              /* blue #2563eb */
+    --primary: 25 81% 51%;               /* logo orange #e8731e */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 216 38% 97%;            /* alt section bg #f6f8fb */
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 220 14% 96%;            /* alt section bg (neutral) */
+    --secondary-foreground: 218 25% 15%;
 
-    --muted: 216 38% 97%;
-    --muted-foreground: 215 16% 47%;     /* #64748b */
+    --muted: 220 14% 96%;
+    --muted-foreground: 218 11% 40%;     /* charcoal-gray */
 
-    --accent: 220 100% 96%;              /* blue tint #eaf1ff */
-    --accent-foreground: 224 76% 48%;    /* #1d4ed8 */
+    --accent: 27 85% 95%;                /* orange tint #fdf1e7 */
+    --accent-foreground: 25 83% 43%;     /* #c75e12 */
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 215 33% 93%;               /* #e7ecf3 */
-    --input: 215 31% 89%;                /* #dbe2ec */
-    --ring: 221 83% 53%;
+    --border: 220 16% 90%;
+    --input: 220 16% 86%;
+    --ring: 25 81% 51%;
 
-    /* Generac brand tokens */
-    --blue: 221 83% 53%;                 /* #2563eb */
-    --blue-top: 223 100% 62%;            /* #3b74ff (gradient top) */
-    --blue-dark: 224 76% 48%;            /* #1d4ed8 */
-    --blue-accent: 219 70% 70%;          /* #7ea3e8 */
-    --blue-tint: 220 100% 96%;           /* #eaf1ff */
-    --slate-header: 218 49% 10%;         /* #0d1626 */
-    --slate-hero: 220 60% 10%;           /* #0a1428 */
-    --slate-footer: 220 57% 7%;          /* #080f1d */
-    --slate-600: 215 25% 27%;            /* #334155 */
+    /* Generac brand tokens — values now mapped to the logo's orange + charcoal.
+       Token names kept (--blue*) so component classes don't all need editing;
+       they resolve to orange. (Rename later if desired.) */
+    --blue: 25 81% 51%;                  /* logo orange #e8731e */
+    --blue-top: 26 91% 57%;              /* #f5852e (gradient top) */
+    --blue-dark: 25 83% 43%;             /* #c75e12 */
+    --blue-accent: 28 82% 68%;           /* #f0a86a (light orange) */
+    --blue-tint: 27 85% 95%;             /* #fdf1e7 */
+    --slate-header: 218 13% 16%;         /* logo charcoal #2b2f36 */
+    --slate-hero: 218 15% 13%;           /* deeper charcoal */
+    --slate-footer: 218 16% 10%;         /* darkest charcoal */
+    --slate-600: 218 11% 28%;
     --amber: 44 92% 50%;                 /* stars #f5b50a */
     --green: 154 63% 33%;                /* success #1f8a5b */
 

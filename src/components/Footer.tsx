@@ -55,7 +55,7 @@ const Footer = () => {
 
             <div className="inline-flex items-center gap-2 mt-[18px] rounded-full px-3.5 py-2 bg-blue-accent/10 border border-blue-accent/20">
               <ShieldCheck className="h-[15px] w-[15px] text-blue-accent" />
-              <span className="font-body font-semibold text-[12.5px] text-[#cdd8ea]">
+              <span className="font-body font-semibold text-[12.5px] text-[#d9dde3]">
                 Licensed &amp; Insured in NJ
               </span>
             </div>

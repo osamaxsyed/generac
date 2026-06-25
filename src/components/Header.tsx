@@ -36,7 +36,7 @@ const Header = () => {
               <Link
                 key={link.name}
                 to={link.href}
-                className="font-body font-medium text-[14.5px] text-[#cdd8ea] px-3 py-2.5 rounded-lg hover:bg-white/[0.07] hover:text-white transition-colors"
+                className="font-body font-medium text-[14.5px] text-[#d9dde3] px-3 py-2.5 rounded-lg hover:bg-white/[0.07] hover:text-white transition-colors"
               >
                 {link.name}
               </Link>
@@ -87,7 +87,7 @@ const Header = () => {
                 key={link.name}
                 to={link.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="py-3.5 font-body font-medium text-[15px] text-[#cdd8ea] border-b border-white/[0.06] hover:text-white transition-colors"
+                className="py-3.5 font-body font-medium text-[15px] text-[#d9dde3] border-b border-white/[0.06] hover:text-white transition-colors"
               >
                 {link.name}
               </Link>

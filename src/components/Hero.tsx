@@ -31,7 +31,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative overflow-hidden border-b border-[#eef1f6] bg-[radial-gradient(120%_90%_at_85%_-10%,#eef3fc_0%,#ffffff_46%),linear-gradient(180deg,#ffffff,#f6f8fb)]">
+    <section className="relative overflow-hidden border-b border-[#eef1f6] bg-[radial-gradient(120%_90%_at_85%_-10%,#fbf3ec_0%,#ffffff_46%),linear-gradient(180deg,#ffffff,#f6f8fb)]">
       <div className="pointer-events-none absolute -top-[120px] -right-[80px] w-[520px] h-[520px] rounded-full bg-[radial-gradient(circle,hsl(var(--blue)/0.10),transparent_62%)]" />
 
       <div className="relative container-x py-[clamp(40px,6vw,84px)] grid gap-[clamp(36px,5vw,72px)] items-center lg:grid-cols-2">
@@ -100,8 +100,8 @@ const Hero = () => {
 
         {/* Right: image placeholder + quick-quote card */}
         <div className="relative">
-          <div className="relative aspect-[4/3.2] rounded-[22px] overflow-hidden bg-gradient-to-br from-[#1e3a63] via-[#0f1f3d] to-[#0b1830] shadow-[0_30px_60px_-24px_rgba(13,22,38,0.55),inset_0_1px_0_rgba(255,255,255,0.08)]">
-            <div className="absolute inset-0 bg-[radial-gradient(120%_90%_at_75%_20%,rgba(59,116,255,0.28),transparent_55%)]" />
+          <div className="relative aspect-[4/3.2] rounded-[22px] overflow-hidden bg-gradient-to-br from-[#3a3f47] via-[#26292f] to-[#1a1c20] shadow-[0_30px_60px_-24px_rgba(13,22,38,0.55),inset_0_1px_0_rgba(255,255,255,0.08)]">
+            <div className="absolute inset-0 bg-[radial-gradient(120%_90%_at_75%_20%,rgba(245,133,46,0.30),transparent_55%)]" />
             <div className="absolute inset-0 opacity-50 bg-[linear-gradient(rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.06)_1px,transparent_1px)] bg-[length:34px_34px]" />
             <div className="absolute left-0 right-0 bottom-0 p-[22px] flex items-center gap-3">
               <span className="grid place-items-center w-[38px] h-[38px] rounded-[10px] bg-white/10 border border-white/20 shrink-0">
