@@ -46,7 +46,7 @@ const Services = () => {
         <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
           <div className="eyebrow">Our Services</div>
           <h2 className="display text-3xl md:text-[42px] leading-tight mb-4">
-            Everything your generator needs — under one roof
+            Everything your generator needs, under one roof
           </h2>
           <p className="font-body text-base md:text-lg text-muted-foreground">
             From whole-house installation to ongoing maintenance and emergency

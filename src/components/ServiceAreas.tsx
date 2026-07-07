@@ -15,7 +15,7 @@ const ServiceAreas = () => {
             Serving homes across {business.county}
           </h2>
           <p className="font-body text-base md:text-lg text-muted-foreground mt-4">
-            Standby generator installation and service throughout {business.county}, NJ — keeping homes
+            Standby generator installation and service throughout {business.county}, NJ, keeping homes
             powered through {business.utility} outages.
           </p>
         </div>

@@ -12,7 +12,7 @@ const About = () => {
     {
       icon: MapPin,
       title: `Local to ${business.county}`,
-      description: `We know the ${business.utility} grid and how outages play out here after nor'easters and summer storms. Our trucks are nearby, so estimates and storm response come fast — typically within ${business.stats.responseTime}.`,
+      description: `We know the ${business.utility} grid and how outages play out here after nor'easters and summer storms. Our trucks are nearby, so estimates and storm response come fast.`,
     },
     {
       icon: BadgeCheck,
@@ -37,9 +37,8 @@ const About = () => {
             Why {business.county} homeowners choose a generator-only specialist
           </h2>
           <p className="font-body text-base md:text-lg text-muted-foreground mt-4 leading-relaxed">
-            A focused, local team beats a big-box generalist every time your power
-            is on the line — backed by {business.stats.yearsInBusiness} years and{" "}
-            {business.stats.generatorsServiced} generators serviced.
+            A focused, local team beats a big-box generalist every time your
+            power is on the line.
           </p>
         </div>
 

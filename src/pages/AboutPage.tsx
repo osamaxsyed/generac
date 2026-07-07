@@ -9,7 +9,7 @@ const AboutPage = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title={`About | ${business.name}`}
-        description={`${business.name} installs and services standby and whole-house generators across ${business.county}, NJ. Licensed, insured, and local — protecting homes from ${business.utility} outages.`}
+        description={`${business.name} installs and services standby and whole-house generators across ${business.county}, NJ. Licensed, insured, and local, protecting homes from ${business.utility} outages.`}
         canonical="/about"
       />
       <Header />

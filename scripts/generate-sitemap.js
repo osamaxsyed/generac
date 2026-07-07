@@ -10,7 +10,8 @@ const locations = JSON.parse(readFileSync(join(__dirname, '../src/data/locations
 const services = JSON.parse(readFileSync(join(__dirname, '../src/data/services.json'), 'utf8'));
 
 const baseUrl = 'https://monmouthcountygenerac.com';
-const currentDate = new Date().toISOString().split('T')[0];
+// No lastmod: stamping every URL with the build date on each deploy teaches
+// Google to distrust the sitemap. lastmod is optional; omit it entirely.
 
 // Static pages
 const staticPages = [
@@ -60,7 +61,6 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${allPages.map(page => `  <url>
     <loc>${baseUrl}${page.url}</loc>
-    <lastmod>${currentDate}</lastmod>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>
   </url>`).join('\n')}

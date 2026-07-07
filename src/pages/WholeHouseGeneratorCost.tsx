@@ -12,10 +12,10 @@ const costFactors = [
   },
   {
     title: "Whole-house vs essential-circuit coverage",
-    body: "Powering your entire home costs more than backing up a select group of essential circuits — heat, refrigeration, the well pump, and key outlets. Many homeowners choose essential-circuit coverage to keep costs down while still staying comfortable through an outage.",
+    body: "Powering your entire home costs more than backing up a select group of essential circuits (heat, refrigeration, the well pump, and key outlets). Many homeowners choose essential-circuit coverage to keep costs down while still staying comfortable through an outage.",
   },
   {
-    title: "Fuel type — natural gas vs propane",
+    title: "Fuel type: natural gas vs propane",
     body: "If your home already has natural gas service, that is usually the simplest hookup. Homes without gas typically run on a propane tank, which may add the cost of the tank and its connection. The right choice depends on what is available at your property.",
   },
   {
@@ -32,7 +32,7 @@ const costFactors = [
   },
   {
     title: "Installation labor and site work",
-    body: "Labor covers the pad, generator placement, fuel line, electrical tie-in, and commissioning. Site conditions — how far the unit sits from the panel and gas meter, and the type of pad — all influence the work involved.",
+    body: "Labor covers the pad, generator placement, fuel line, electrical tie-in, and commissioning. Site conditions (how far the unit sits from the panel and gas meter, and the type of pad) all influence the work involved.",
   },
 ];
 
@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     question: "Is a whole-house or essential-circuit generator cheaper?",
-    answer: "An essential-circuit setup is generally less expensive because it uses a smaller generator and transfer switch to back up only critical loads — heat, refrigeration, the well pump, and key outlets — rather than your entire panel. A whole-house system costs more but powers everything. We help you weigh comfort against budget during the assessment so you choose the right level of coverage.",
+    answer: "An essential-circuit setup is generally less expensive because it uses a smaller generator and transfer switch to back up only critical loads (heat, refrigeration, the well pump, and key outlets) rather than your entire panel. A whole-house system costs more but powers everything. We help you weigh comfort against budget during the assessment so you choose the right level of coverage.",
   },
   {
     question: "Does fuel type affect cost?",
@@ -60,9 +60,9 @@ const WholeHouseGeneratorCost = () => {
   const hasPhone = Boolean(business.phone);
   const canonical = `${SITE_URL}/whole-house-generator-cost`;
 
-  const pageTitle = `Whole House Generator Cost in NJ — What to Expect | ${business.name}`;
+  const pageTitle = `Whole House Generator Cost in NJ: What to Expect | ${business.name}`;
   const pageDescription =
-    "What goes into whole house generator cost in New Jersey? Understand the factors — home size, fuel type, transfer switch, panel, and permits — and get a free on-site quote.";
+    "What goes into whole house generator cost in New Jersey? Understand the factors (home size, fuel type, transfer switch, panel, and permits) and get a free on-site quote.";
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -121,7 +121,7 @@ const WholeHouseGeneratorCost = () => {
               <span className="text-background/70">in New Jersey.</span>
             </h1>
             <p className="font-body text-lg md:text-xl text-background/85 max-w-2xl mb-10 border-l-4 border-background pl-5">
-              There is no single sticker price for a whole-house generator — what you pay depends on your home, your power needs, and your site. Here is what actually drives the cost, so you can plan with realistic expectations.
+              There is no single sticker price for a whole-house generator. What you pay depends on your home, your power needs, and your site. Here is what actually drives the cost, so you can plan with realistic expectations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button
@@ -152,7 +152,7 @@ const WholeHouseGeneratorCost = () => {
               A standby generator is an installed electrical and fuel system, not an appliance you buy off a shelf. The final price reflects the size of the unit your home needs, how much of the house you want to back up, your fuel source, the electrical work required, and the permitting and labor for your specific property. Two homes on the same street can land at very different numbers.
             </p>
             <p className="font-body text-base md:text-lg text-muted-foreground leading-relaxed">
-              In {business.county}, reliable backup power matters because {business.utility} customers can face extended outages during nor'easters, summer storms, and winter ice events. Investing in the right system — sized correctly and installed to code — is what keeps your heat, well pump, and refrigeration running when the grid goes down. Below are the factors that determine where your project falls in the range.
+              In {business.county}, reliable backup power matters because {business.utility} customers can face extended outages during nor'easters, summer storms, and winter ice events. Investing in the right system, sized correctly and installed to code, is what keeps your heat, well pump, and refrigeration running when the grid goes down. Below are the factors that determine where your project falls in the range.
             </p>
           </div>
         </section>
@@ -188,10 +188,10 @@ const WholeHouseGeneratorCost = () => {
               Whole-House vs Essential-Circuit
             </h2>
             <p className="font-body text-base md:text-lg text-muted-foreground leading-relaxed mb-5">
-              The biggest lever on cost is how much of your home you choose to back up. A <strong className="text-foreground">whole-house system</strong> powers everything automatically, so an outage is barely noticeable — but it requires a larger generator and a transfer switch sized for your full electrical panel.
+              The biggest lever on cost is how much of your home you choose to back up. A <strong className="text-foreground">whole-house system</strong> powers everything automatically, so an outage is barely noticeable, but it requires a larger generator and a transfer switch sized for your full electrical panel.
             </p>
             <p className="font-body text-base md:text-lg text-muted-foreground leading-relaxed">
-              An <strong className="text-foreground">essential-circuit system</strong> backs up only the loads that matter most — heating, refrigeration, the well pump, and key outlets and lighting — using a smaller, lower-cost generator. For many {business.county} homeowners, essential-circuit coverage delivers the comfort and safety they need at a more accessible price. The right choice comes down to your priorities and budget, which is exactly what an on-site assessment is for.
+              An <strong className="text-foreground">essential-circuit system</strong> backs up only the loads that matter most (heating, refrigeration, the well pump, and key outlets and lighting) using a smaller, lower-cost generator. For many {business.county} homeowners, essential-circuit coverage delivers the comfort and safety they need at a more accessible price. The right choice comes down to your priorities and budget, which is exactly what an on-site assessment is for.
             </p>
           </div>
         </section>
@@ -201,7 +201,7 @@ const WholeHouseGeneratorCost = () => {
           <div className="w-full max-w-3xl mx-auto px-6 md:px-10">
             <div className="brutalist-section-eyebrow">FAQ</div>
             <h2 className="brutalist-headline text-2xl md:text-4xl text-foreground mb-8">
-              Whole House Generator Cost — FAQ
+              Whole House Generator Cost: FAQ
             </h2>
             <div className="space-y-3">
               {faqs.map((faq, i) => (

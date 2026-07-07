@@ -45,7 +45,7 @@ const ServicesOverview = () => {
             </h2>
           </div>
           <p className="font-body text-base md:text-lg text-muted-foreground md:max-w-md">
-            Whole-house and standby generators for Monmouth County homes — installed,
+            Whole-house and standby generators for Monmouth County homes: installed,
             maintained, and repaired to keep you powered through JCP&amp;L outages.
           </p>
         </div>

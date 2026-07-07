@@ -3,69 +3,118 @@
     "slug": "middletown",
     "name": "Middletown",
     "state": "NJ",
-    "zipCodes": ["07748", "07701", "07738"],
+    "zipCodes": [
+      "07748",
+      "07701",
+      "07738"
+    ],
     "description": "Standby generator installation, maintenance, and repair throughout Middletown, NJ. Serving Lincroft, River Plaza, Belford, Leonardo, and Navesink.",
-    "neighborhoods": ["Lincroft", "River Plaza", "Belford", "Leonardo", "Navesink", "Port Monmouth"],
-    "localContext": "Middletown is one of the largest townships in Monmouth County, with everything from wooded Lincroft lots to bayfront homes in Belford and Port Monmouth. Its size and tree cover mean JCP&L outages here can run long after nor'easters and summer storms, and the bayshore sections saw extended outages during past major storms — which is exactly why standby generators are common throughout the township. Many Lincroft and Navesink homes sit on well and septic, so a power loss also means no water until the generator kicks in. Natural gas is available across much of Middletown, though some outlying and bayshore properties run on propane.",
+    "neighborhoods": [
+      "Lincroft",
+      "River Plaza",
+      "Belford",
+      "Leonardo",
+      "Navesink",
+      "Port Monmouth"
+    ],
+    "localContext": "Middletown is one of the largest townships in Monmouth County, with everything from wooded Lincroft lots to bayfront homes in Belford and Port Monmouth. Its size and tree cover mean JCP&L outages here can run long after nor'easters and summer storms, and the bayshore sections saw extended outages during past major storms, which is exactly why standby generators are common throughout the township. Many Lincroft and Navesink homes sit on well and septic, so a power loss also means no water until the generator kicks in. Natural gas is available across much of Middletown, though some outlying and bayshore properties run on propane.",
     "priority": 0.9
   },
   {
     "slug": "holmdel",
     "name": "Holmdel",
     "state": "NJ",
-    "zipCodes": ["07733"],
+    "zipCodes": [
+      "07733"
+    ],
     "description": "Whole-house standby generator services in Holmdel, NJ. Serving Holmdel Village, Crawfords Corner, and the estate neighborhoods off Holmdel Road.",
-    "neighborhoods": ["Holmdel Village", "Crawfords Corner", "Phalanx"],
-    "localContext": "Holmdel is an affluent, low-density township of larger single-family homes and estate lots, many on private wells where an outage cuts water along with power. The heavy tree canopy that makes Holmdel attractive also makes it outage-prone when storms bring down limbs on JCP&L lines. Whole-house standby generators are popular here because homeowners want their central air, well pumps, and home systems to ride through an outage seamlessly. Natural gas service reaches much of the township, while some larger properties farther from the mains use propane.",
+    "neighborhoods": [
+      "Holmdel Village",
+      "Crawfords Corner",
+      "Phalanx"
+    ],
+    "localContext": "Holmdel is an affluent, low-density township of larger single-family homes and estate lots, many on private wells where an outage cuts water along with power. The heavy tree canopy that makes Holmdel attractive also makes it outage-prone when storms bring down limbs on JCP&L lines. Whole-house standby generators are popular here because homeowners want their central air, well pumps, and home systems to ride through an outage without a hiccup. Natural gas service reaches much of the township, while some larger properties farther from the mains use propane.",
     "priority": 0.9
   },
   {
     "slug": "colts-neck",
     "name": "Colts Neck",
     "state": "NJ",
-    "zipCodes": ["07722"],
+    "zipCodes": [
+      "07722"
+    ],
     "description": "Standby and whole-house generator installation in Colts Neck, NJ. Serving the township's estate properties, horse farms, and large-lot neighborhoods.",
-    "neighborhoods": ["Colts Neck Village", "Scobeyville", "Phalanx Road estates"],
-    "localContext": "Colts Neck is known for large estate lots, horse farms, and homes set well back from the road, which makes reliable backup power especially important — many properties are on well water and have outbuildings, barns, or pools that depend on electricity. The rural, heavily wooded character of the township means JCP&L restoration after a major storm can take longer than in denser areas. Because gas mains don't reach every corner of Colts Neck, propane is common here, and we size and configure systems for whichever fuel a property has.",
+    "neighborhoods": [
+      "Colts Neck Village",
+      "Scobeyville",
+      "Phalanx Road estates"
+    ],
+    "localContext": "Colts Neck is known for large estate lots, horse farms, and homes set well back from the road, which makes reliable backup power especially important. Many properties are on well water and have outbuildings, barns, or pools that depend on electricity. The rural, heavily wooded character of the township means JCP&L restoration after a major storm can take longer than in denser areas. Because gas mains don't reach every corner of Colts Neck, propane is common here, and we size and configure systems for whichever fuel a property has.",
     "priority": 0.85
   },
   {
     "slug": "rumson",
     "name": "Rumson",
     "state": "NJ",
-    "zipCodes": ["07760"],
+    "zipCodes": [
+      "07760"
+    ],
     "description": "Whole-house generator services in Rumson, NJ. Serving the borough's waterfront and estate homes along the Navesink and Shrewsbury rivers.",
-    "neighborhoods": ["Rumson Neck", "Oceanic", "Black Point"],
-    "localContext": "Rumson's waterfront and estate homes along the Navesink and Shrewsbury rivers are both high-value and exposed to coastal storms, and the borough experienced extended outages during past major events. Standby generators are widespread here because homeowners protect against both routine JCP&L outages and the longer ones that follow nor'easters and hurricanes. The mature tree-lined streets add to outage risk from downed limbs. Natural gas serves most of the borough, making seamless automatic standby systems straightforward to install.",
+    "neighborhoods": [
+      "Rumson Neck",
+      "Oceanic",
+      "Black Point"
+    ],
+    "localContext": "Rumson's waterfront and estate homes along the Navesink and Shrewsbury rivers are both high-value and exposed to coastal storms, and the borough experienced extended outages during past major events. Standby generators are widespread here because homeowners protect against both routine JCP&L outages and the longer ones that follow nor'easters and hurricanes. The mature tree-lined streets add to outage risk from downed limbs. Natural gas serves most of the borough, making automatic standby systems straightforward to install.",
     "priority": 0.85
   },
   {
     "slug": "marlboro",
     "name": "Marlboro",
     "state": "NJ",
-    "zipCodes": ["07746"],
+    "zipCodes": [
+      "07746"
+    ],
     "description": "Standby generator installation and service in Marlboro, NJ. Serving Morganville and Marlboro's larger subdivision neighborhoods.",
-    "neighborhoods": ["Morganville", "Robertsville", "Marlboro Village"],
-    "localContext": "Marlboro is a sought-after township of larger single-family subdivisions, many built in recent decades with central air, finished basements, and the kind of electrical demand that makes a properly sized standby generator worthwhile. Homeowners here lose power to the same JCP&L circuits during summer thunderstorms and winter storms, and a backup system keeps sump pumps running in finished basements during heavy rain — a real concern in this area. Natural gas is available across most of Marlboro, which makes automatic standby installation clean and low-maintenance.",
+    "neighborhoods": [
+      "Morganville",
+      "Robertsville",
+      "Marlboro Village"
+    ],
+    "localContext": "Marlboro is a sought-after township of larger single-family subdivisions, many built in recent decades with central air, finished basements, and the kind of electrical demand that makes a properly sized standby generator worthwhile. Homeowners here lose power to the same JCP&L circuits during summer thunderstorms and winter storms, and a backup system keeps sump pumps running in finished basements during heavy rain, a real concern in this area. Natural gas is available across most of Marlboro, which makes automatic standby installation clean and low-maintenance.",
     "priority": 0.85
   },
   {
     "slug": "manalapan",
     "name": "Manalapan",
     "state": "NJ",
-    "zipCodes": ["07726"],
+    "zipCodes": [
+      "07726"
+    ],
     "description": "Generator installation, maintenance, and repair in Manalapan, NJ. Serving Manalapan's residential subdivisions and larger-lot neighborhoods.",
-    "neighborhoods": ["Manalapan", "Gordons Corner", "Tennent"],
-    "localContext": "Manalapan is a growing township of established and newer subdivisions with sizable homes that depend heavily on electric systems — central air, well pumps on some properties, and sump pumps in many basements. Storm-related JCP&L outages affect the township regularly, and homeowners increasingly add standby generators to avoid losing heat, water, and basement protection during multi-day outages. Natural gas reaches most neighborhoods, with propane used on some of the more rural parcels toward the township's edges.",
+    "neighborhoods": [
+      "Manalapan",
+      "Gordons Corner",
+      "Tennent"
+    ],
+    "localContext": "Manalapan is a growing township of established and newer subdivisions with sizable homes that depend heavily on electric systems: central air, well pumps on some properties, and sump pumps in many basements. Storm-related JCP&L outages affect the township regularly, and homeowners increasingly add standby generators to avoid losing heat, water, and basement protection during multi-day outages. Natural gas reaches most neighborhoods, with propane used on some of the more rural parcels toward the township's edges.",
     "priority": 0.85
   },
   {
     "slug": "wall",
     "name": "Wall",
     "state": "NJ",
-    "zipCodes": ["07719", "07727"],
+    "zipCodes": [
+      "07719",
+      "07727"
+    ],
     "description": "Standby generator services in Wall Township, NJ. Serving Wall's coastal-adjacent and inland neighborhoods, including the Allenwood and Glendola areas.",
-    "neighborhoods": ["Allenwood", "Glendola", "West Belmar", "Wall"],
+    "neighborhoods": [
+      "Allenwood",
+      "Glendola",
+      "West Belmar",
+      "Wall"
+    ],
     "localContext": "Wall Township spans a wide area from inland wooded neighborhoods to communities near the shore, and its proximity to the coast means it feels the brunt of nor'easters and tropical systems that knock out JCP&L power. Many Wall properties are on wells, so an outage means no running water, and standby generators are a common solution. The mix of older homes and newer construction here brings varied electrical setups; we assess each property to size the system correctly. Natural gas covers much of the township, with propane on outlying lots.",
     "priority": 0.8
   },
@@ -73,19 +122,32 @@
     "slug": "howell",
     "name": "Howell",
     "state": "NJ",
-    "zipCodes": ["07731"],
+    "zipCodes": [
+      "07731"
+    ],
     "description": "Whole-house generator installation and maintenance in Howell, NJ. Serving Howell's large township area and its many well-and-septic properties.",
-    "neighborhoods": ["Ramtown", "Adelphia", "Candlewood", "Howell"],
-    "localContext": "Howell is a large, semi-rural township where a high share of homes run on private wells and septic systems — meaning a power outage immediately cuts off water. That makes standby generators particularly valuable here. Howell's wooded lots and long JCP&L feeder lines can translate into slower restoration after major storms. Because the township is spread out, natural gas doesn't reach every neighborhood, so propane-fueled standby systems are common, and we configure installations around whichever fuel a property has available.",
+    "neighborhoods": [
+      "Ramtown",
+      "Adelphia",
+      "Candlewood",
+      "Howell"
+    ],
+    "localContext": "Howell is a large, semi-rural township where a high share of homes run on private wells and septic systems, so a power outage immediately cuts off water. That makes standby generators particularly valuable here. Howell's wooded lots and long JCP&L feeder lines can translate into slower restoration after major storms. Because the township is spread out, natural gas doesn't reach every neighborhood, so propane-fueled standby systems are common, and we configure installations around whichever fuel a property has available.",
     "priority": 0.8
   },
   {
     "slug": "freehold",
     "name": "Freehold",
     "state": "NJ",
-    "zipCodes": ["07728"],
+    "zipCodes": [
+      "07728"
+    ],
     "description": "Generator installation, repair, and maintenance in Freehold, NJ. Serving Freehold Township and Borough, including the Stonehurst and West Freehold areas.",
-    "neighborhoods": ["West Freehold", "Stonehurst", "Freehold Borough"],
+    "neighborhoods": [
+      "West Freehold",
+      "Stonehurst",
+      "Freehold Borough"
+    ],
     "localContext": "The Freehold area combines the denser Freehold Borough with the larger-lot subdivisions of Freehold Township, giving us a wide range of homes and electrical setups to work with. Storm outages on the local JCP&L network affect both, and township homeowners with central air, basements, and sometimes wells add standby generators to keep essential systems running. Natural gas service is widely available across most of the Freehold area, making automatic standby generators a clean and reliable option for most homes here.",
     "priority": 0.8
   },
@@ -93,9 +155,15 @@
     "slug": "red-bank",
     "name": "Red Bank",
     "state": "NJ",
-    "zipCodes": ["07701"],
+    "zipCodes": [
+      "07701"
+    ],
     "description": "Standby generator services in Red Bank, NJ. Serving the borough's historic homes and riverfront neighborhoods along the Navesink.",
-    "neighborhoods": ["Red Bank", "Navesink riverfront", "West Side"],
+    "neighborhoods": [
+      "Red Bank",
+      "Navesink riverfront",
+      "West Side"
+    ],
     "localContext": "Red Bank is a compact riverfront borough with a mix of historic homes, newer construction, and properties along the Navesink that are exposed to coastal storms. Older housing stock here sometimes has dated electrical panels that need evaluation before a generator is added, which we handle as part of the assessment. The borough has seen its share of storm-driven JCP&L outages, and standby generators are popular among homeowners who want to protect their homes and stay comfortable through them. Natural gas serves most of the borough.",
     "priority": 0.8
   },
@@ -103,9 +171,16 @@
     "slug": "tinton-falls",
     "name": "Tinton Falls",
     "state": "NJ",
-    "zipCodes": ["07724", "07753"],
+    "zipCodes": [
+      "07724",
+      "07753"
+    ],
     "description": "Generator installation and maintenance in Tinton Falls, NJ. Serving Tinton Falls' established neighborhoods and newer residential developments.",
-    "neighborhoods": ["Tinton Falls", "Shrewsbury Township area", "Hance Road"],
+    "neighborhoods": [
+      "Tinton Falls",
+      "Shrewsbury Township area",
+      "Hance Road"
+    ],
     "localContext": "Tinton Falls blends established neighborhoods with newer residential developments, sitting centrally in Monmouth County between the shore and the western townships. Homeowners here face the same JCP&L storm outages as the surrounding area, and the township's mix of wooded sections and open subdivisions creates varied outage exposure. Standby generators are increasingly common as residents look to protect central air, sump pumps, and home electronics during multi-day outages. Natural gas is available across most of Tinton Falls, supporting clean automatic standby installations.",
     "priority": 0.8
   }

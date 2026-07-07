@@ -47,7 +47,7 @@ const Hero = () => {
           </h1>
 
           <p className="font-body text-[clamp(16.5px,1.6vw,19px)] leading-relaxed text-[#475569] mt-5 max-w-[560px]">
-            Seasonal maintenance that keeps your home storm-ready — plus expert installation and 24/7
+            Seasonal maintenance that keeps your home storm-ready, plus expert installation and 24/7
             emergency repair. We do <strong className="text-foreground font-semibold">only generators</strong>,
             and we serve <strong className="text-foreground font-semibold">only {business.county}</strong>.
           </p>
@@ -122,7 +122,7 @@ const Hero = () => {
                   <div className="font-headline font-bold text-[17px] text-foreground">Get your free quote</div>
                 </div>
                 <p className="font-body text-[13px] leading-snug text-[#64748b] mt-2.5 mb-4">
-                  60-second form — a specialist replies{" "}
+                  60-second form. A specialist replies{" "}
                   <strong className="text-blue-dark font-bold">within 1 business hour</strong>.
                 </p>
                 <form onSubmit={submit} className="flex flex-col gap-2.5">
@@ -146,7 +146,7 @@ const Hero = () => {
                     <option>Generator Installation</option>
                     <option>Generator Repair (Emergency)</option>
                     <option>Standby Generator Quote</option>
-                    <option>Not sure — help me decide</option>
+                    <option>Not sure, help me decide</option>
                   </select>
                   <button type="submit" className="btn-primary mt-0.5 w-full">
                     Get My Free Quote

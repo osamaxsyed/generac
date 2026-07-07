@@ -69,7 +69,7 @@
     "faqs": [
       {
         "question": "How is a standby generator different from a portable generator?",
-        "answer": "A standby generator is permanently installed outside your home, connected to a fixed fuel supply, and starts automatically the moment the power goes out \u2014 no cords, no gasoline, no manual setup. A portable generator must be rolled out, fueled, and connected by hand, and cannot safely power your home's wiring without additional equipment."
+        "answer": "A standby generator is permanently installed outside your home, connected to a fixed fuel supply, and starts automatically the moment the power goes out. No cords, no gasoline, no manual setup. A portable generator must be rolled out, fueled, and connected by hand, and cannot safely power your home's wiring without additional equipment."
       },
       {
         "question": "How quickly does a standby generator restore power?",
@@ -123,14 +123,14 @@
     "metaTitleGeo": "Generator Maintenance in Monmouth County, NJ | Monmouth County Generac",
     "metaDescriptionGeo": "Scheduled standby generator maintenance in Monmouth County, NJ. Oil, filters, battery and full load testing so your unit starts in the next JCP&L outage. Free quotes.",
     "intro": [
-      "A standby generator only earns its keep if it starts the moment the power goes out. In Monmouth County, NJ, that moment usually arrives during a nor'easter or a summer storm \u2014 exactly when you cannot afford a unit that won't crank. Routine generator maintenance is what keeps that from happening.",
+      "A standby generator only earns its keep if it starts the moment the power goes out. In Monmouth County, NJ, that moment usually arrives during a nor'easter or a summer storm, exactly when you cannot afford a unit that won't crank. Routine generator maintenance is what keeps that from happening.",
       "We are generator specialists serving only Monmouth County, so every maintenance visit is built around how homes here actually lose power: long JCP&L outages in wooded and Bayshore neighborhoods, cold-weather starts, and units that may sit unused for months between storms.",
       "Whether your generator is under a manufacturer maintenance interval or hasn't been touched in years, we get it back to a known-good, storm-ready condition and keep it there."
     ],
     "whyItMatters": [
       {
         "head": "Most no-start failures are preventable",
-        "body": "The top reasons a standby generator won't start \u2014 a weak battery, stale fuel, old oil, a fouled spark plug \u2014 are exactly what scheduled maintenance catches. We find them on a clear day instead of during an outage."
+        "body": "The top reasons a standby generator won't start (a weak battery, stale fuel, old oil, a fouled spark plug) are exactly what scheduled maintenance catches. We find them on a clear day instead of during an outage."
       },
       {
         "head": "Monmouth's outages are long and weather-driven",
@@ -196,7 +196,7 @@
       {
         "step": 3,
         "head": "Run & transfer test",
-        "body": "We start the unit and verify it transfers your home to generator power correctly under load \u2014 the real test the weekly self-test skips."
+        "body": "We start the unit and verify it transfers your home to generator power correctly under load, the real test the weekly self-test skips."
       },
       {
         "step": 4,
@@ -245,7 +245,7 @@
       },
       {
         "question": "Can maintenance be done before a specific storm season?",
-        "answer": "Absolutely \u2014 a pre-season visit is the most reliable way to ensure your generator is ready before the nor'easters arrive. Many Monmouth County homeowners schedule service in early fall for exactly this reason."
+        "answer": "Absolutely. A pre-season visit is the most reliable way to ensure your generator is ready before the nor'easters arrive. Many Monmouth County homeowners schedule service in early fall for exactly this reason."
       }
     ]
   },
@@ -279,7 +279,7 @@
         "answer": "The most common causes of a no-start are a dead or weak battery, stale fuel, a tripped breaker, a fouled spark plug, or a control setting left in the off position after a previous service. We diagnose the root cause rather than swapping parts, then repair the specific failure and verify the unit starts and transfers correctly."
       },
       {
-        "question": "My generator runs but the house has no power \u2014 what's wrong?",
+        "question": "My generator runs but the house has no power. What's wrong?",
         "answer": "If the generator runs but power doesn't reach the home, the issue is usually in the automatic transfer switch or the electrical connection rather than the generator itself. This requires diagnosis of the switch, the wiring, and the controls. We test the full transfer path to isolate and repair the fault."
       },
       {
@@ -401,7 +401,7 @@
       },
       {
         "question": "Will replacing the battery fix a generator that won't start?",
-        "answer": "Often, yes \u2014 a dead battery is the most frequent no-start cause. But if the battery tests fine, the problem lies elsewhere, such as fuel, ignition, or the controller. We test before replacing so you only pay to fix the actual issue."
+        "answer": "Often, yes. A dead battery is the most frequent no-start cause. But if the battery tests fine, the problem lies elsewhere, such as fuel, ignition, or the controller. We test before replacing so you only pay to fix the actual issue."
       }
     ]
   },
@@ -439,7 +439,7 @@
         "answer": "We check the engine, battery, fuel system, oil, filters, and the automatic transfer switch, then run the unit and verify it transfers power correctly. You receive a written report describing the condition of each component and any recommended repairs or maintenance."
       },
       {
-        "question": "I just bought a house with a generator \u2014 should I inspect it?",
+        "question": "I just bought a house with a generator. Should I inspect it?",
         "answer": "Yes. Without the prior owner's service records, there's no way to know when the generator was last maintained or whether it still works. An inspection gives you a clear baseline and a maintenance plan so you can rely on the unit during the first storm you face."
       }
     ]
@@ -514,7 +514,7 @@
       },
       {
         "question": "Is a maintenance plan worth it for a home generator?",
-        "answer": "For most homeowners, yes. A standby generator only earns its value if it starts during an outage, and the failures that prevent that \u2014 dead batteries, old oil, stale fuel \u2014 are exactly what scheduled maintenance prevents. A plan also means the work is tracked and you're not relying on memory."
+        "answer": "For most homeowners, yes. A standby generator only earns its value if it starts during an outage, and the failures that prevent that (dead batteries, old oil, stale fuel) are exactly what scheduled maintenance prevents. A plan also means the work is tracked and you're not relying on memory."
       },
       {
         "question": "What's included in your preventive maintenance plan?",

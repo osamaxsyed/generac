@@ -27,7 +27,7 @@ const ServiceAreasPage = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title={`Generator Service Areas in Monmouth County, NJ | ${business.name}`}
-        description={`We install, maintain, and repair standby generators across ${business.county}, NJ — keeping homes powered through ${business.utility} outages. Find your town.`}
+        description={`We install, maintain, and repair standby generators across ${business.county}, NJ, keeping homes powered through ${business.utility} outages. Find your town.`}
         canonical="/service-areas"
         keywords="generator installation Monmouth County, standby generator NJ, whole house generator, JCP&L outage backup power, generator repair near me"
       />
@@ -59,7 +59,7 @@ const ServiceAreasPage = () => {
             </h1>
             <p className="font-body text-lg md:text-xl text-background/85 max-w-2xl mb-10 border-l-4 border-background pl-5">
               We serve homeowners across {business.county}, New Jersey with standby and whole-house
-              generator installation, maintenance, and repair — keeping your home running through
+              generator installation, maintenance, and repair, keeping your home running through
               {" "}{business.utility} outages, coastal storms, and winter weather. Licensed and insured.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">

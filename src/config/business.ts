@@ -49,12 +49,14 @@ export const business = {
 
   // Stats — sample/marketing values from the design. Confirm or adjust before
   // relying on them; shown in hero trust pills and the reviews section.
+  // All values were fabricated placeholders; leave empty until real,
+  // verifiable numbers exist. Empty strings hide the UI elements.
   stats: {
-    yearsInBusiness: "12+",
-    generatorsServiced: "1,200+",
-    responseTime: "1 hr",
-    googleRating: "4.9",
-    reviewCount: "150+",
+    yearsInBusiness: "",
+    generatorsServiced: "",
+    responseTime: "",
+    googleRating: "",
+    reviewCount: "",
   },
 
   county: "Monmouth County",

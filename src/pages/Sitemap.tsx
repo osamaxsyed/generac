@@ -55,7 +55,7 @@ const Sitemap = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title={`Sitemap | ${business.name}`}
-        description={`Browse all pages on the ${business.name} website — generator services, service areas across ${business.county}, and more.`}
+        description={`Browse all pages on the ${business.name} website: generator services, service areas across ${business.county}, and more.`}
         canonical="/sitemap"
       />
       <Header />

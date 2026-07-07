@@ -33,7 +33,7 @@ const FAQ = () => {
     {
       question: `What areas do you serve?`,
       answer:
-        `We install and service standby generators across ${business.county}, NJ, including Middletown, Holmdel, Colts Neck, Rumson, Marlboro, Manalapan, Wall, Howell, Freehold, Red Bank, and Tinton Falls. If you don't see your town, get in touch — we may still be able to help.`,
+        `We install and service standby generators across ${business.county}, NJ, including Middletown, Holmdel, Colts Neck, Rumson, Marlboro, Manalapan, Wall, Howell, Freehold, Red Bank, and Tinton Falls. If you don't see your town, get in touch. We may still be able to help.`,
     },
   ];
 

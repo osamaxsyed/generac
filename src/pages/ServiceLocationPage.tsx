@@ -255,7 +255,7 @@ const ServiceLocationPage = () => {
             <div className="w-full max-w-3xl mx-auto px-6 md:px-10">
               <div className="brutalist-section-eyebrow">FAQ</div>
               <h2 className="brutalist-headline text-2xl md:text-4xl text-foreground mb-8">
-                {serviceData.name} in {locationData.name} — FAQ
+                {serviceData.name} in {locationData.name}: FAQ
               </h2>
               <div className="space-y-3">
                 {serviceData.faqs.map((faq: { question: string; answer: string }, i: number) => (

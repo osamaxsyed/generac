@@ -7,7 +7,7 @@ const HowItWorks = () => {
       icon: ClipboardList,
       title: "Free on-site assessment",
       description:
-        "We visit your home, calculate your load, and size the right generator — no pressure, no obligation.",
+        "We visit your home, calculate your load, and size the right generator. No pressure, no obligation.",
     },
     {
       number: "02",
@@ -41,7 +41,7 @@ const HowItWorks = () => {
             Your path to reliable backup power
           </h2>
           <p className="font-body text-base md:text-lg text-muted-foreground mt-4 leading-relaxed">
-            A straightforward, four-step process — from first visit to year-round
+            A straightforward, four-step process, from first visit to year-round
             peace of mind.
           </p>
         </div>

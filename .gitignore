@@ -29,3 +29,4 @@ dist-ssr
 .env.*
 !.env.example
 .design-source/
+dist-server

@@ -50,7 +50,7 @@ const Footer = () => {
 
             <p className="font-body text-sm leading-relaxed text-[#8295ad] mt-[18px]">
               Independent standby-generator specialists serving {business.county},
-              NJ — maintenance, installation, and emergency repair.
+              NJ: maintenance, installation, and emergency repair.
             </p>
 
             <div className="inline-flex items-center gap-2 mt-[18px] rounded-full px-3.5 py-2 bg-blue-accent/10 border border-blue-accent/20">

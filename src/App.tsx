@@ -1,10 +1,10 @@
+import type { ReactNode } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
-import StructuredData from "./components/StructuredData";
 import Index from "./pages/Index";
 import ServicesIndex from "./pages/ServicesIndex";
 import ServicePage from "./pages/ServicePage";
@@ -22,15 +22,24 @@ import ServiceLocationPage from "./pages/ServiceLocationPage";
 
 const queryClient = new QueryClient();
 
-const App = () => (
+// Providers and routes are exported separately so the server entry
+// (src/entry-server.tsx) can wrap AppRoutes in a StaticRouter while the
+// client keeps BrowserRouter. Business/Organization/WebSite JSON-LD is
+// injected statically by scripts/prerender.js, not at runtime.
+export const AppProviders = ({ children }: { children: ReactNode }) => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <StructuredData />
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
+      {children}
+    </TooltipProvider>
+  </QueryClientProvider>
+);
+
+export const AppRoutes = () => (
+  <>
+    <ScrollToTop />
+    <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/services" element={<ServicesIndex />} />
           <Route path="/services/:service" element={<ServicePage />} />
@@ -50,9 +59,15 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  </>
+);
+
+const App = () => (
+  <AppProviders>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  </AppProviders>
 );
 
 export default App;
